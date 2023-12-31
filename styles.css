@@ -22,9 +22,7 @@ a:visited {
 
 .index {
   display: flex;
-   text-indent: 10px;
-   letter-spacing: 3px;
-   
+  text-indent: 10px;
 }
 
 .index p {
