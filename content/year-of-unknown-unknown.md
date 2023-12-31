@@ -1,4 +1,4 @@
-Wrapping up 2023, which is the year that I could compressed experience while exploring the world. Read a pretty nice mental framework about [unknown known](https://en.wikipedia.org/wiki/The_Unknown_Known) recently, Based on this framework this year was expanded `unknown unknown` that I finally turned into the stage of settlement.
+Wrapping up 2023, which is the year that I could compressed experience while exploring the world. Read a pretty nice mental framework about [unknown known](https://www.freecodecamp.org/news/how-to-discover-your-unknown-knowns/) recently, Based on this framework this year was expanded `unknown unknown` that I finally turned into the stage of settlement.
 
 ### Keywords
 
