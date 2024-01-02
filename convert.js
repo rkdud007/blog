@@ -1,12 +1,23 @@
 const fs = require('fs');
 const path = require('path');
 const { marked } = require('marked');
+const hljs = require('highlight.js');
 
 // Directory where your markdown files are located
 const markdownDirectory = path.join(__dirname, 'content');
 
 // Output directory for the HTML files
 const outputDirectory = path.join(__dirname, 'blog');
+
+// Set options for marked
+marked.setOptions({
+    highlight: function(code, lang) {
+      // Use Highlight.js to highlight code blocks
+      const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+      return hljs.highlight(code, { language }).value;
+    },
+    // other options here
+  });
 
 // Read all markdown files from the content directory
 fs.readdir(markdownDirectory, (err, files) => {
