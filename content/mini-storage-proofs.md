@@ -1,10 +1,10 @@
-The intended audience of this post is someone who wants to understand storage proof in a handy way with specific code as an example.
+The intended audience of this post is someone who wants to understand storage proof in a handy way with more detailed code as an example.
 
 This blog post is based on a personal project `mini-storage-proofs`. The goal is to simplify the whole workflow with minimum implementation from accessing data on a chain in a trust-less way. Check out [the full code here](https://github.com/rkdud007/mini-storage-proofs).
 
 ## What are storage proofs
 
-Storage proof has been a rising topic in blockchain (especially scaling solutions like L2s around Ethereum) infrastructure recently. It is crucial to deliver an on-chain state in a fully trust-less manner. We can also retrieve the same data from elsewhere like RPC providers, oracles, etc, but this technology ensures all of the flow of on-chain data is proven. For those who are interested in theoretical explanation around storage proofs, recommend to check out [this article](https://starkware.medium.com/what-are-storage-proofs-and-how-can-they-improve-oracles-e0379108720a).
+Storage proof has been a rising topic in blockchain (especially scaling solutions like L2s around Ethereum) infrastructure recently. It is crucial to deliver an on-chain state in a fully trust-less manner. We can also retrieve the same data from elsewhere like RPC providers, oracles, etc, but storage proofs ensures all of the flow of on-chain data is proven. For those who are interested in theoretical explanation around storage proofs, recommend to check out [this article](https://starkware.medium.com/what-are-storage-proofs-and-how-can-they-improve-oracles-e0379108720a).
 
 ## Merkle Tree with blockchain
 
@@ -60,6 +60,8 @@ In this case, use the `BLOCKHASH` opcode to access the block hash. If want to ac
 
 - starknet/StarknetStorageproof:
 
+Starknet also supports to get block hash directly through on-chain, in this case this syscall only allows within the range of `[first_v0_12_0_block, current_block - 10]`. Check more detail about syscall [here](https://docs.starknet.io/documentation/architecture_and_concepts/Smart_Contracts/system-calls-cairo1/).
+
 ```rust
         // =================================
         // Step 1. Accessing the block hash
@@ -79,7 +81,9 @@ In this case, use the `BLOCKHASH` opcode to access the block hash. If want to ac
 
 ### 2. Accessing the block header
 
-First, get the block header through off-chain.
+From the first step, we now have a valid block hash. Block hash is the hashed value from the block header, that the information that we want to retrieve ( like some data exist in MPT ) exists in the block header as root. Just to be simple, we need a valid block header to get valid data, and the block header's validity can be ensured by the block hash's validity that we retrieve in previous step.
+
+So first, get the block header through off-chain.
 
 - offchain:
 
@@ -101,7 +105,7 @@ pub async fn get_encoded_block_header() -> Result<()> {
 </div>
 </details>
 
-Next, pass this block header as input in the contract to verify with the block hash that we retrieve in the previous step.
+Next, pass this block header as input in the contract to verify with the block hash that we retrieve in the previous step. In Ethereum, block hash is keccak hashed value of rlp encoded (bytes type) block header. The code is implemented to retrieve the block hash by giving block header data from input and comparing it to the block hash directly obtained from OPCODE. In this way, we can make sure about the validity of the provided block header.
 
 - evm/EVMStorageproof:
 
@@ -132,7 +136,7 @@ Next, pass this block header as input in the contract to verify with the block h
 
 - starknet/StarknetStorageproof:
 
-In Starknet, there is no rlp encoding so passed each individual field.
+In Starknet, there is no rlp encoding so passed each individual field. Also compared to Ethereum, a block hash is defined as the Pedersen hash of the header’s fields. Check more detail [here](https://docs.starknet.io/documentation/architecture_and_concepts/Network_Architecture/header/).
 
 ```rust
         // =================================
@@ -183,7 +187,7 @@ In Starknet, there is no rlp encoding so passed each individual field.
 
 ### 3. Determining the Desired Root
 
-If you can get a verified block header, you can decode it to get any kind of values that you want. But first, we need the root value for it.
+If you can get a verified block header, you can decode it to get any kind of values that you want. In Ethereum, the block header you get from the input is rlp encoded one and if you decode it you can get the roots of MPT structures like state root, transaction root, and receipt root. All of the roots are roots of the Ethereum state tree like the state tree, transaction tree, and receipt tree which is composed of elements as information that you might be interested in.
 
 - evm/EVMStorageproof:
 
@@ -449,7 +453,11 @@ In the specific case of `StateRoot`, the node contains `StorageRoot` as one of t
     }
 ```
 
-### Reference
+## Summary
+
+To summarize, storage proofs in the core are leveraging Merkle proof of state so that we can retrieve desired proven data. Starting from a valid block hash, we get a valid block header, then get valid roots from that header, and using Merkle proof we get valid node data. This all happens in various tries like `state trie`, `transaction trie`, `receipt trie` in Ethereum and `contract trie`, `class trie` etc in Starknet. Hope you can get a more concrete understanding of `storage proofs` technology. Thank you.
+
+## Reference
 
 - [Herodotus EVM Fact Registry Contract](https://github.com/HerodotusDev/herodotus-evm/blob/master/src/core/FactsRegistry.sol)
 - [Optimism Secure Merkle Trie](https://github.com/ethereum-optimism/optimism/blob/05deae54595b0e6bdd33580de81cb9ad194898bc/packages/contracts-bedrock/src/libraries/trie/SecureMerkleTrie.sol#L6)
