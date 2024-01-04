@@ -12,7 +12,7 @@
   <body>
     <h1>mini-storage-proofs</h1>
     <p><a href="../blog.html">Blog</a></p>
-    <p>January 3, 2024</p>
+    <p>January 5, 2024</p>
       <p>The intended audience of this post is someone who wants to understand storage proof in a handy way with more detailed code as an example.</p>
 <p>This blog post is based on a personal project <code>mini-storage-proofs</code>. The goal is to simplify the whole workflow with minimum implementation from accessing data on a chain in a trust-less way. Check out <a href="https://github.com/rkdud007/mini-storage-proofs">the full code here</a>.</p>
 <h2>What are storage proofs</h2>
@@ -28,8 +28,8 @@
 <h2>Proven blockheader</h2>
 <p>During the Merkle proof verifies process, there was one important assumption involved: <code>We need valid root</code>.</p>
 <p>In this blog post we will not dive deep into this topic, we are just going to use syscall to get the current block hash through on-chain ( which is limited to the latest 256 blocks). If anyone wants to learn more about getting a historical state in a trustless way, would recommend checking out <a href="https://starkware.co/resource/proving-ethereums-state-on-starknet-with-herodotus/">this article</a>.</p>
-<h2>Storage Proofs workflow</h2>
-<p>Now lets go through <a href="https://github.com/rkdud007/mini-storage-proofs?tab=readme-ov-file"><code>mini-storage-proof</code></a> with codes. This project implements <a href="https://docs.herodotus.dev/herodotus-docs/developers/storage-proofs/workflow">Herodotus Storage Proofs workflow</a> step by step both in Ethereum and Starknet.</p>
+<h2>Storage Proofs workflow with EVM</h2>
+<p>Now lets go through <a href="https://github.com/rkdud007/mini-storage-proofs?tab=readme-ov-file"><code>mini-storage-proof</code></a> with codes. This project implements <a href="https://docs.herodotus.dev/herodotus-docs/developers/storage-proofs/workflow">Herodotus Storage Proofs workflow</a> step by step both in Ethereum and Starknet. We will first take a look at full EVM workflow.</p>
 <h3>1. Accessing the block hash</h3>
 <p>In this case, use the <code>BLOCKHASH</code> opcode to access the block hash. If want to access older than 256 blocks from the latest block, need <a href="https://docs.herodotus.dev/herodotus-docs/protocol-design/historical-block-hash-accumulator">historical accumulator</a> to store all block hashes onchain in trust-less manner.</p>
 <ul>
@@ -51,25 +51,6 @@
         // Syscall to get block hash
         return blockhash(blockNumber);
     }
-</code></pre>
-<ul>
-<li>starknet/StarknetStorageproof:</li>
-</ul>
-<p>Starknet also supports to get block hash directly through on-chain, in this case this syscall only allows within the range of <code>[first_v0_12_0_block, current_block - 10]</code>. Check more detail about syscall <a href="https://docs.starknet.io/documentation/architecture_and_concepts/Smart_Contracts/system-calls-cairo1/">here</a>.</p>
-<pre><code class="language-rust">        // =================================
-        // Step 1. Accessing the block hash
-        // =================================
-
-        // get origin chain&#39;s block hash on destination chain
-        fn get_block_hash(self: @ContractState, block_number: u64) -&gt; felt252 {
-            let latest_block_number: u64 = get_block_info().unbox().block_number;
-             // Ensure the block number is within the last 256 blocks
-            assert(block_number &gt;= latest_block_number - 256, &#39;Block number is too old&#39;);
-            assert(block_number &lt; latest_block_number, &#39;Block number is too high&#39;);
-
-            // Syscall to get block hash
-            get_block_hash_syscall(block_number).unwrap()
-        }
 </code></pre>
 <h3>2. Accessing the block header</h3>
 <p>From the first step, we now have a valid block hash. Block hash is the hashed value from the block header, that the information that we want to retrieve ( like some data exist in MPT ) exists in the block header as root. Just to be simple, we need a valid block header to get valid data, and the block header&#39;s validity can be ensured by the block hash&#39;s validity that we retrieve in previous step.</p>
@@ -117,54 +98,6 @@
             return false;
         }
     }
-</code></pre>
-<ul>
-<li>starknet/StarknetStorageproof:</li>
-</ul>
-<p>In Starknet, there is no rlp encoding so passed each individual field. Also compared to Ethereum, a block hash is defined as the Pedersen hash of the header’s fields. Check more detail <a href="https://docs.starknet.io/documentation/architecture_and_concepts/Network_Architecture/header/">here</a>.</p>
-<pre><code class="language-rust">        // =================================
-        // 2. Accessing the block header
-        // =================================
-
-        // verify origin chain&#39;s block header on destination chain
-        fn get_block_header(
-            self: @ContractState,
-            block_number: felt252,
-            global_state_root: felt252,
-            sequencer_address: felt252,
-            block_timestamp: felt252,
-            transaction_count: felt252,
-            transaction_commitment: felt252,
-            event_count: felt252,
-            event_commitment: felt252,
-            parent_block_hash: felt252
-        ) -&gt; bool {
-            // Step 1. Retrieve the block hash
-            let block_number_u64: u64 = block_number.try_into().unwrap();
-            let retrieved_block_hash = get_block_hash_syscall(block_number_u64).unwrap();
-
-            let hash_pedersen = PedersenImpl::new(0);
-            hash_pedersen.update(block_number);
-            hash_pedersen.update(global_state_root);
-            hash_pedersen.update(sequencer_address);
-            hash_pedersen.update(block_timestamp);
-            hash_pedersen.update(transaction_count);
-            hash_pedersen.update(transaction_commitment);
-            hash_pedersen.update(event_count);
-            hash_pedersen.update(event_commitment);
-            hash_pedersen.update(0);
-            hash_pedersen.update(0);
-            hash_pedersen.update(parent_block_hash);
-            // Step 2. Hash the provided block header and compare
-            let provided_block_header_hash = hash_pedersen.finalize();
-
-            // Step 3. Verify it
-            if provided_block_header_hash == retrieved_block_hash {
-                return true;
-            } else {
-                return false;
-            }
-        }
 </code></pre>
 <h3>3. Determining the Desired Root</h3>
 <p>If you can get a verified block header, you can decode it to get any kind of values that you want. In Ethereum, the block header you get from the input is rlp encoded one and if you decode it you can get the roots of MPT structures like state root, transaction root, and receipt root. All of the roots are roots of the Ethereum state tree like the state tree, transaction tree, and receipt tree which is composed of elements as information that you might be interested in.</p>
@@ -216,36 +149,6 @@
             .readList();
         return bytes32(items[4].readUint256()); // The transactions root is the 5th item
     }
-</code></pre>
-<ul>
-<li>starknet/StarknetStorageproof:</li>
-</ul>
-<p>For the Starknet case, the global state root is not the root of MPT, it&#39;s hashed value with the other 2 MPT&#39;s roots. You can check out detailed information <a href="https://docs.starknet.io/documentation/architecture_and_concepts/Network_Architecture/starknet-state/#state_commitment">here</a>.</p>
-<pre><code class="language-rust">
-       // =================================
-        // 3. Determining the Desired Root (Contract tree root)
-        // =================================
-
-        // get origin chain&#39;s contract_trie_root on destination chain
-        fn get_contract_trie_root(
-            self: @ContractState,
-            block_number: felt252,
-            global_state_root: felt252,
-            contract_trie_root: felt252,
-            class_trie_root: felt252
-        ) -&gt; felt252 {
-            // Step 1. Construct the state commitment
-            let hash_poseidon = PoseidonImpl::new();
-            hash_poseidon.update(&#39;STARKNET_STATE_V0&#39;);
-            hash_poseidon.update(contract_trie_root);
-            hash_poseidon.update(class_trie_root);
-            let state_commitment = hash_poseidon.finalize();
-
-            // Step 2. Verify the state commitment
-            assert(state_commitment == global_state_root, &#39;state commitment does not match&#39;);
-
-            return contract_trie_root;
-        }
 </code></pre>
 <h3>4. Verifying Data Against the Chosen Root</h3>
 <p>You might want to retrieve specific values beneath that root. In this case, first need to generate compatible inclusion proof in off chain. The below code is generating account proof for my wallet.</p>
@@ -307,7 +210,139 @@
         );
     }
 </code></pre>
-<p>In this case, we verify with <code>stateRoot</code> to get a valid value. As we retrieved in Step 3, it can be either <code>TransactionRoot</code> or <code>ReceiptsRoot</code>. The process will be the same.</p>
+<h3>5. Verifying Data Against the Storage Root</h3>
+<p>In the specific case of <code>StateRoot</code>, the node contains <code>StorageRoot</code> as one of the fields. Then by using <code>slot</code> as the key for this storage tree, we can retrieve the corresponding <code>storageValue</code> in the same process as did in Step 4.</p>
+<ul>
+<li>evm/EVMStorageproof:</li>
+</ul>
+<pre><code class="language-js">    // =================================
+    // 5. Verifying Data Against the Chosen Root (Storage)
+    // =================================
+    function verifyStorage(
+        bytes32 storageRoot,
+        bytes32 slot,
+        bytes calldata storageSlotTrieProof
+    ) public view returns (bytes32 slotValue) {
+        // Get valid storage root from account ( Step 4 )
+
+        // Retrieve the key from the storage slot
+        bytes memory storageKey = abi.encodePacked(slot);
+
+        // Verify the account
+        (, bytes memory slotValueRLP) = Lib_SecureMerkleTrie.get(
+            storageKey,
+            storageSlotTrieProof,
+            storageRoot
+        );
+
+        // Decode the [`slotValueRLP`] into a value
+        slotValue = slotValueRLP.toRLPItem().readBytes32();
+    }
+</code></pre>
+<h2>Storage Proofs workflow with Starknet</h2>
+<p>Let&#39;s recap the workflow with Starknet. We will follow the same step which is a general rule in storage-proof technology, but depending on how states are implemented with different hash functions and MPT structure, details can be different.</p>
+<h3>1. Accessing the block hash</h3>
+<ul>
+<li>starknet/StarknetStorageproof:</li>
+</ul>
+<p>Starknet also supports to get block hash directly through on-chain, in this case this syscall only allows within the range of <code>[first_v0_12_0_block, current_block - 10]</code>. Check more detail about syscall <a href="https://docs.starknet.io/documentation/architecture_and_concepts/Smart_Contracts/system-calls-cairo1/">here</a>.</p>
+<pre><code class="language-rust">        // =================================
+        // Step 1. Accessing the block hash
+        // =================================
+
+        // get origin chain&#39;s block hash on destination chain
+        fn get_block_hash(self: @ContractState, block_number: u64) -&gt; felt252 {
+            let latest_block_number: u64 = get_block_info().unbox().block_number;
+             // Ensure the block number is within the last 256 blocks
+            assert(block_number &gt;= latest_block_number - 256, &#39;Block number is too old&#39;);
+            assert(block_number &lt; latest_block_number, &#39;Block number is too high&#39;);
+
+            // Syscall to get block hash
+            get_block_hash_syscall(block_number).unwrap()
+        }
+</code></pre>
+<h3>2. Accessing the block header</h3>
+<ul>
+<li>starknet/StarknetStorageproof:</li>
+</ul>
+<p>In Starknet, there is no rlp encoding so passed each individual field. Also compared to Ethereum, a block hash is defined as the Pedersen hash of the header’s fields. Check more detail <a href="https://docs.starknet.io/documentation/architecture_and_concepts/Network_Architecture/header/">here</a>.</p>
+<pre><code class="language-rust">        // =================================
+        // 2. Accessing the block header
+        // =================================
+
+        // verify origin chain&#39;s block header on destination chain
+        fn get_block_header(
+            self: @ContractState,
+            block_number: felt252,
+            global_state_root: felt252,
+            sequencer_address: felt252,
+            block_timestamp: felt252,
+            transaction_count: felt252,
+            transaction_commitment: felt252,
+            event_count: felt252,
+            event_commitment: felt252,
+            parent_block_hash: felt252
+        ) -&gt; bool {
+            // Step 1. Retrieve the block hash
+            let block_number_u64: u64 = block_number.try_into().unwrap();
+            let retrieved_block_hash = get_block_hash_syscall(block_number_u64).unwrap();
+
+            let hash_pedersen = PedersenImpl::new(0);
+            hash_pedersen.update(block_number);
+            hash_pedersen.update(global_state_root);
+            hash_pedersen.update(sequencer_address);
+            hash_pedersen.update(block_timestamp);
+            hash_pedersen.update(transaction_count);
+            hash_pedersen.update(transaction_commitment);
+            hash_pedersen.update(event_count);
+            hash_pedersen.update(event_commitment);
+            hash_pedersen.update(0);
+            hash_pedersen.update(0);
+            hash_pedersen.update(parent_block_hash);
+            // Step 2. Hash the provided block header and compare
+            let provided_block_header_hash = hash_pedersen.finalize();
+
+            // Step 3. Verify it
+            if provided_block_header_hash == retrieved_block_hash {
+                return true;
+            } else {
+                return false;
+            }
+        }
+</code></pre>
+<h3>3. Determining the Desired Root</h3>
+<ul>
+<li>starknet/StarknetStorageproof:</li>
+</ul>
+<p>In Starknet, the global state root is not the root of MPT, it&#39;s hashed value with the other 2 MPT&#39;s roots. You can check out detailed information <a href="https://docs.starknet.io/documentation/architecture_and_concepts/Network_Architecture/starknet-state/#state_commitment">here</a>.</p>
+<pre><code class="language-rust">
+       // =================================
+        // 3. Determining the Desired Root (Contract tree root)
+        // =================================
+
+        // get origin chain&#39;s contract_trie_root on destination chain
+        fn get_contract_trie_root(
+            self: @ContractState,
+            block_number: felt252,
+            global_state_root: felt252,
+            contract_trie_root: felt252,
+            class_trie_root: felt252
+        ) -&gt; felt252 {
+            // Step 1. Construct the state commitment
+            let hash_poseidon = PoseidonImpl::new();
+            hash_poseidon.update(&#39;STARKNET_STATE_V0&#39;);
+            hash_poseidon.update(contract_trie_root);
+            hash_poseidon.update(class_trie_root);
+            let state_commitment = hash_poseidon.finalize();
+
+            // Step 2. Verify the state commitment
+            assert(state_commitment == global_state_root, &#39;state commitment does not match&#39;);
+
+            return contract_trie_root;
+        }
+</code></pre>
+<h3>4. Verifying Data Against the Chosen Root</h3>
+<p>In Starknet, we verify with <code>stateRoot</code> to get a valid value. As we retrieved in Step 3, it can be either <code>TransactionRoot</code> or <code>ReceiptsRoot</code>. The process will be the same.</p>
 <ul>
 <li>starknet/StarknetStorageproof:</li>
 </ul>
@@ -346,38 +381,10 @@
         }
 </code></pre>
 <h3>5. Verifying Data Against the Storage Root</h3>
-<p>In the specific case of <code>StateRoot</code>, the node contains <code>StorageRoot</code> as one of the fields. Then by using <code>slot</code> as the key for this storage tree, we can retrieve the corresponding <code>storageValue</code> in the same process as did in Step 4.</p>
-<ul>
-<li>evm/EVMStorageproof:</li>
-</ul>
-<pre><code class="language-js">    // =================================
-    // 5. Verifying Data Against the Chosen Root (Storage)
-    // =================================
-    function verifyStorage(
-        bytes32 storageRoot,
-        bytes32 slot,
-        bytes calldata storageSlotTrieProof
-    ) public view returns (bytes32 slotValue) {
-        // Get valid storage root from account ( Step 4 )
-
-        // Retrieve the key from the storage slot
-        bytes memory storageKey = abi.encodePacked(slot);
-
-        // Verify the account
-        (, bytes memory slotValueRLP) = Lib_SecureMerkleTrie.get(
-            storageKey,
-            storageSlotTrieProof,
-            storageRoot
-        );
-
-        // Decode the [`slotValueRLP`] into a value
-        slotValue = slotValueRLP.toRLPItem().readBytes32();
-    }
-</code></pre>
 <ul>
 <li>starknet/StarknetStorageproof:</li>
 </ul>
-<pre><code class="language-rust">// =================================
+<pre><code class="language-rust">        // =================================
         // 5. Verifying Data Against the Chosen Root (Storage)
         // =================================
         fn verify_storage(
