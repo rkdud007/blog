@@ -1,6 +1,6 @@
 The intended audience of this post is someone who wants to understand storage proof in a handy way with more detailed code as an example.
 
-This blog post is based on a personal project `mini-storage-proofs`. The goal is to simplify the whole workflow with minimum implementation from accessing data on a chain in a trust-less way. Check out [the full code here](https://github.com/rkdud007/mini-storage-proofs).
+This blog post is based on a personal project `mini-storage-proofs`. The goal is to simplify the whole workflow with minimum implementation from accessing data on a chain in a trust-less way. Check out [the full code here](https://github.com/rkdud007/mini-storage-proofs). Also check out the talk [video](https://youtu.be/2GHI0Y92Vfg) explained with this project.
 
 ## What are storage proofs
 
