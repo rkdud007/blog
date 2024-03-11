@@ -6,6 +6,11 @@ body {
     max-width: 700px;
     background-color: whitesmoke;
 }
+
+*:lang(ko-KR){
+  font-family: "Noto Sans Korean";
+ }
+
 pre {
   border-radius: 5px;
   border: 1px solid #ccc;
