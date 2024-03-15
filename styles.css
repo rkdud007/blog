@@ -51,3 +51,30 @@ img {
   height: auto;
   display: block; 
 }
+
+/* Table Styles */
+table {
+  width: 100%; /* Set table width to fill container */
+  border-collapse: collapse; /* Collapse borders to avoid double borders */
+  margin-top: 20px; /* Add some spacing at the top of the table */
+}
+
+/* Table Header Styles */
+th {
+  background-color: #f2f2f2; /* Light grey background */
+  color: #333; /* Dark text color for contrast */
+  padding: 10px; /* Add padding for spacing */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Add a bottom border to header */
+}
+
+/* Table Cell Styles */
+td {
+  padding: 8px; /* Add padding for spacing */
+  border-bottom: 1px solid #ddd; /* Add a subtle border to each cell */
+}
+
+/* Row Styling for Hover Effect */
+tr:hover {
+  background-color: #f5f5f5; /* Change row background on hover */
+}
