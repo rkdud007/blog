@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>piapark</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+  <body>
+    <h1>async-rust</h1>
+    <p><a href="../blog.html">Blog</a></p>
+    <p>March 15, 2024</p>
+      <pre><code>#![feature(noop_waker)]
+
+use std::future::Future;
+use std::pin::Pin;
+use std::task::Waker;
+
+#[derive(Debug)]
+enum FooState {
+    First,
+    Second,
+    Final,
+}
+
+#[derive(Debug)]
+struct Foo {
+    state: FooState,
+}
+
+impl Foo {
+    fn new() -&gt; Self {
+        Self {
+            state: FooState::First,
+        }
+    }
+}
+
+impl Future for Foo {
+    type Output = u32;
+
+    fn poll(
+        self: std::pin::Pin&lt;&amp;mut Self&gt;,
+        cx: &amp;mut std::task::Context&lt;&#39;_&gt;,
+    ) -&gt; std::task::Poll&lt;Self::Output&gt; {
+        let pin = self.get_mut();
+        match pin.state {
+            FooState::First =&gt; {
+                println!(&quot;poll for first time&quot;);
+                pin.state = FooState::Second;
+                std::task::Poll::Pending
+            }
+            FooState::Second =&gt; {
+                println!(&quot;poll for second time&quot;);
+                pin.state = FooState::Final;
+                std::task::Poll::Pending
+            }
+            FooState::Final =&gt; std::task::Poll::Ready(42),
+        }
+    }
+}
+
+fn main() {
+    let mut foo = Foo::new();
+
+    let waker = Waker::noop();
+    let mut cx = std::task::Context::from_waker(&amp;waker);
+
+    {
+        let foo = Pin::new(&amp;mut foo);
+        let a = foo.poll(&amp;mut cx);
+        println!(&quot;{a:?}&quot;);
+    }
+
+    {
+        let foo = Pin::new(&amp;mut foo);
+        let a = foo.poll(&amp;mut cx);
+        println!(&quot;{a:?}&quot;);
+    }
+
+    {
+        let foo = Pin::new(&amp;mut foo);
+        let a = foo.poll(&amp;mut cx);
+        println!(&quot;{a:?}&quot;);
+    }
+}
+</code></pre>
+
+    </div>
+  </body>
+</html>

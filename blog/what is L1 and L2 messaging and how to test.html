@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>piapark</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+  <body>
+    <h1>what is L1 and L2 messaging and how to test</h1>
+    <p><a href="../blog.html">Blog</a></p>
+    <p>March 15, 2024</p>
+      <p><em>Before start, as blockchain development trend change rapidly due to emerging new innovative tools, this blog post -- written in 2024.01.21-- might not be suitable when the time you are reading this.</em></p>
+<p>In this blog, I will go through:</p>
+<ul>
+<li>What is L1/L2 native messaging and why testing is important</li>
+<li>Categorize possible situations that need full integration test with L1/L2 messaging</li>
+<li>Different L2&#39;s actual native messaging implementation: Arbitrum, Optimism, Starnet, zkSync</li>
+</ul>
+<h2>What is L1/L2 messaging ?</h2>
+<p>As Ethereum has moved on to roll-up centric era to solve scaling problem, lots of L2s are rised as alternatives of expensive gas price for smart contract developers. As those chains inherit security to Ethereum, each of them developed way to settle L2 state to L1. For each L2s, there is contract deployed on L1 that represent that chain, and to settle on L1 we need some how communicate with contract on L1 and contract on L2 that can access L2 state. To do this communication, L2 chains designed their own way to send messages from/to specified L1 contrac, which is call L1/L2 native messaging. As I abstract lots of concept around rolups, if you are unfamiliar with it please check the concept first.</p>
+<p>And as the the rising needs of multi-chain access on applications due to increasing number of L2 chains users, this L1 L2 messaging system is using usefully for developers. But unfortunatley with current toolings, do full integration test around messaging is bit tricky base on the sitution.</p>
+<h2>Categorize test situation</h2>
+<p>categorize situation that need for full-integration test in L1 L2 mesaging with two standards.</p>
+<ul>
+<li><p><code>Integrity</code> : State integrity from deployed network</p>
+<ul>
+<li>Do you need to continue with current state in already deployed testnet/mainnet network? Does the message that you are trying to send effected by previous chain state?</li>
+</ul>
+</li>
+<li><p><code>Verifiable Method</code> : Existance of receiver&#39;s method that can veify message</p>
+<ul>
+<li>Do you have a logic on your message receiver&#39;s contract that after getting the message, save it to the contract&#39;s state and have a function that expose to get that data?</li>
+</ul>
+</li>
+</ul>
+<p>Based on this two standard, we can categorize situations that we face in our L1 L2 native message test.</p>
+<p>[TODO: IMAGE OF DIAGRAM]</p>
+<p>Now I will go through each case one by one and sort out current possible method to do integration test.</p>
+<h2>Available approaches in each case</h2>
+<h3>Case 1. Integrity ❌ / Verifiable Method ✅</h3>
+
+    </div>
+  </body>
+</html>
