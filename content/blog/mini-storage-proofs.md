@@ -1,6 +1,6 @@
 +++
 title = "Mini Storage Proofs"
-date = "2023-03-15T09:09:44-04:00"
+date = "2024-03-15T09:09:44-04:00"
 tags = ["tech", "storage-proof"]
 +++
 
