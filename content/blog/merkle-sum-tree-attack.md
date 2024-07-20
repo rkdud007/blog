@@ -1,6 +1,6 @@
 +++
 title = "Merkle Sum Tree Attack PoC"
-date = "2023-03-15T09:09:44-04:00"
+date = "2024-01-02T15:17:44-04:00"
 tags = ["cryptography", "security"]
 +++
 
@@ -8,13 +8,13 @@ tags = ["cryptography", "security"]
 
 The following article is focused on explaining PoC that did to reproduce the vulnerability that was described in this [paper](https://eprint.iacr.org/2022/043.pdf).
 
-The attack is targeting the `Merkle Sum Tree` data structure, that is used in [Summa Protocol](https://github.com/summa-dev/summa-solvency) to provide [Proof of Solvency](https://vitalik.eth.limo/general/2022/11/19/proof_of_solvency.html). As Summa modified their implementation slightly to deal with vulnerability, we'll go through how's the modification and how we tried PoC to attack to verify it's indeed safe.
+The attack is targeting the **Merkle Sum Tree** data structure, that is used in [Summa Protocol](https://github.com/summa-dev/summa-solvency) to provide [Proof of Solvency](https://vitalik.eth.limo/general/2022/11/19/proof_of_solvency.html). As Summa modified their implementation slightly to deal with vulnerability, we'll go through how's the modification and how we tried PoC to attack to verify it's indeed safe.
 
 You could check full PoC code in this [PR](https://github.com/rkdud007/summa-solvency/pull/1).
 
 ## Merkle Sum Tree
 
-As the original Merkle Sum Tree is broken and it has a vulnerability where the custodian can build MerkleTree where the balance of middle nod v can be ` max(vr, vl) <= v <= vr + vl, when vr is a balance of right node, vl is a balance of left node`. Detail attack factor is described in this [paper](https://eprint.iacr.org/2022/043.pdf). Summa's Merkle tree constructs a middle node that overcomes this vulnerability.
+As the original Merkle Sum Tree is broken and it has a vulnerability where the custodian can build MerkleTree where the balance of middle nod v can be ` max(vr, vl) <= v <= vr + vl`, when vr is a balance of right node, vl is a balance of left node. Detail attack factor is described in this [paper](https://eprint.iacr.org/2022/043.pdf). Summa's Merkle tree constructs a middle node that overcomes this vulnerability.
 
 ## Summa's Merkle Sum Tree
 
@@ -60,7 +60,7 @@ Turned out that when trying to build a Tree in `max(vr, vl)` this value, and tur
 
 commit: https://github.com/rkdud007/summa-solvency/pull/1/commits/774d68a6d52734831821eba5bd7062505e9a8aa8
 
-This commit simply changed tree construction logic instead of using `vr + vl`, use `max(vr, vl)`. So I called it as `Corrupted Mekle Sum Tree`.
+This commit simply changed tree construction logic instead of using `vr + vl`, use `max(vr, vl)`. So I called it as **Corrupted Mekle Sum Tree**.
 
 As we expected, the generated proof doesn't pass the verification.
 
@@ -103,7 +103,7 @@ During proof generation, for example in `Claire` case, start from the sibling le
 
 ## Conclusion
 
-Our goal for exploiting this vulnerability is to match root `0xcorruptedhash` with root `0xcorruptedwithmaximumhash`. As the verification is happening while getting path nodes from proof ( provided leaf and middle node preimages ) and operating summing the balance & hash it within the balance and child hashes, It is impossible to corrupt both balance and hash at the same time. Balance corruption will determine the corrupted hash value, which will not match with `0xcorruptedwithmaximumhash` that cannot be corrupted with proof generation.
+Our goal for exploiting this vulnerability is to match root _0xcorruptedhash_ with root _0xcorruptedwithmaximumhash_. As the verification is happening while getting path nodes from proof ( provided leaf and middle node preimages ) and operating summing the balance & hash it within the balance and child hashes, It is impossible to corrupt both balance and hash at the same time. Balance corruption will determine the corrupted hash value, which will not match with _0xcorruptedwithmaximumhash_ that cannot be corrupted with proof generation.
 
 So we could say Summa's modified Merkle Sum Tree implementation is indeed safe through this attack PoC.
 
