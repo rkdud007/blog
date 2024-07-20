@@ -5,10 +5,11 @@
     body {
       font-family: monospace;
       text-transform: lowercase;
+      font-size: 110%;
     }
 
     code {
-      font-size: 0.75rem !important;
+      font-size: 95% !important;
       text-transform: none !important;
     }
 
@@ -22,7 +23,7 @@
     }
 
     blockquote {
-      font-size: 0.8rem;
+      font-size: 95% !important;
       margin-bottom: 1.5rem;
     }
 
@@ -39,17 +40,13 @@
       background: #444;
     }
 
-    nav a::before {
-      content: "/";
-    }
-
-    blockquote {
-      color: #ababab;
-    }
-
     hr {
       margin-top: 2rem;
       margin-bottom: 3rem;
+    }
+
+    code {
+      background-color: #565656;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -60,10 +57,6 @@
       nav a:hover {
         color: #333;
         background: white;
-      }
-
-      blockquote {
-        color: #adadad;
       }
     }
   </style>

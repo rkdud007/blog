@@ -1,12 +1,12 @@
 +++
 title = "Mini Storage Proofs"
-date = "2024-01-02T15:17:44-04:00"
+date = "2023-03-15T09:09:44-04:00"
 tags = ["tech", "storage-proof"]
 +++
 
 The intended audience of this post is someone who wants to understand storage proof in a handy way with more detailed code as an example.
 
-This blog post is based on a personal project `mini-storage-proofs`. The goal is to simplify the whole workflow with minimum implementation from accessing data on a chain in a trust-less way. Check out [the full code here](https://github.com/rkdud007/mini-storage-proofs). Also check out the talk [video](https://youtu.be/2GHI0Y92Vfg) explained with this project.
+This blog post is based on a personal project _mini-storage-proofs_. The goal is to simplify the whole workflow with minimum implementation from accessing data on a chain in a trust-less way. Check out [the full code here](https://github.com/rkdud007/mini-storage-proofs). Also check out the talk [video](https://youtu.be/2GHI0Y92Vfg) explained with this project.
 
 ## What are storage proofs
 
@@ -24,19 +24,19 @@ What is the Merkle proof of the value A? Merkle proof is also called as Merkle p
 
 What does it mean by the constructed root of the tree? Also called as verify the proof. Based on the example above, verifying Merkle proof of A would be like a hash key of A with all the elements in the Merkle path. ex. `h(A) -> h(h(A)+h(B)) -> h(h(h(A)+h(B))+h(h(C)+h(D)))` and this final value should be same as the root of the tree that we already know.
 
-If we can assume we already have a `valid` root of the tree, after this whole process we can trust value A as well. Which A is the one containing the detailed information that we aimed to get.
+If we can assume we already have a _valid_ root of the tree, after this whole process we can trust value A as well. Which A is the one containing the detailed information that we aimed to get.
 
-This is important because the key point for storage proof is `to deliver on-chain data in trust-less(valid) way`. Because blockchain(on-chain) data is composed with Merkle trie data structure we could deliver and retrieve desired data fully trustless way by Merkle proof as just mentioned.
+This is important because the key point for storage proof is _to deliver on-chain data in trust-less(valid) way_. Because blockchain(on-chain) data is composed with Merkle trie data structure we could deliver and retrieve desired data fully trustless way by Merkle proof as just mentioned.
 
 ## Proven blockheader
 
-During the Merkle proof verifies process, there was one important assumption involved: `We need valid root`.
+During the Merkle proof verifies process, there was one important assumption involved: **We need valid root**.
 
 In this blog post we will not dive deep into this topic, we are just going to use syscall to get the current block hash through on-chain ( which is limited to the latest 256 blocks). If anyone wants to learn more about getting a historical state in a trustless way, would recommend checking out [this article](https://starkware.co/resource/proving-ethereums-state-on-starknet-with-herodotus/).
 
 ## Storage Proofs workflow with EVM
 
-Now lets go through [`mini-storage-proof`](https://github.com/rkdud007/mini-storage-proofs?tab=readme-ov-file) with codes. This project implements [Herodotus Storage Proofs workflow](https://docs.herodotus.dev/herodotus-docs/developers/storage-proofs/workflow) step by step both in Ethereum and Starknet. We will first take a look at full EVM workflow.
+Now lets go through [mini-storage-proof](https://github.com/rkdud007/mini-storage-proofs?tab=readme-ov-file) with codes. This project implements [Herodotus Storage Proofs workflow](https://docs.herodotus.dev/herodotus-docs/developers/storage-proofs/workflow) step by step both in Ethereum and Starknet. We will first take a look at full EVM workflow.
 
 ### 1. Accessing the block hash
 
@@ -245,7 +245,7 @@ Then pass the proof in the verify function with other values
 
 ### 5. Verifying Data Against the Storage Root
 
-In the specific case of `StateRoot`, the node contains `StorageRoot` as one of the fields. Then by using `slot` as the key for this storage tree, we can retrieve the corresponding `storageValue` in the same process as did in Step 4.
+In the specific case of _StateRoot_, the node contains _StorageRoot_ as one of the fields. Then by using _slot_ as the key for this storage tree, we can retrieve the corresponding _storageValue_ in the same process as did in Step 4.
 
 - evm/EVMStorageproof:
 
@@ -391,7 +391,7 @@ In Starknet, the global state root is not the root of MPT, it's hashed value wit
 
 ### 4. Verifying Data Against the Chosen Root
 
-In Starknet, we verify with `stateRoot` to get a valid value. As we retrieved in Step 3, it can be either `TransactionRoot` or `ReceiptsRoot`. The process will be the same.
+In Starknet, we verify with _stateRoot_ to get a valid value. As we retrieved in Step 3, it can be either _TransactionRoot_ or _ReceiptsRoot_. The process will be the same.
 
 - starknet/StarknetStorageproof:
 
@@ -475,7 +475,7 @@ In Starknet, we verify with `stateRoot` to get a valid value. As we retrieved in
 
 ## Summary
 
-To summarize, storage proofs in the core are leveraging Merkle proof of state so that we can retrieve desired proven data. Starting from a valid block hash, we get a valid block header, then get valid roots from that header, and using Merkle proof we get valid node data. This all happens in various tries like `state trie`, `transaction trie`, `receipt trie` in Ethereum and `contract trie`, `class trie` etc in Starknet. Hope you can get a more concrete understanding of `storage proofs` technology. Thank you.
+To summarize, storage proofs in the core are leveraging Merkle proof of state so that we can retrieve desired proven data. Starting from a valid block hash, we get a valid block header, then get valid roots from that header, and using Merkle proof we get valid node data. This all happens in various tries like _state trie_, _transaction trie_, _receipt trie_ in Ethereum and _contract trie_, _class trie_ etc in Starknet. Hope you can get a more concrete understanding of **storage proofs** technology. Thank you.
 
 ## Reference
 
