@@ -1,0 +1,13 @@
+:root {
+	--maincolor: #fa4b75;
+	--hovercolor: var(--maincolor);
+	--bordercl: #93213c;
+}
+
+html {
+	background: #fff8fa;
+}
+
+footer {
+	border-top-style: dashed;
+}
