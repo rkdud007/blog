@@ -52,5 +52,15 @@ title = 'pia park (dot) me'
 # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
 # dateFormat = "2006-01-02"
 
+math = true
+
 [markup.goldmark.renderer]
 unsafe = true # Allow HTML in md files
+
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+    block = [['\[', '\]'], ['$$', '$$']]
+    inline = [['\(', '\)']]
