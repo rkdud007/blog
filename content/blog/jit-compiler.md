@@ -1,5 +1,4 @@
 +++
-draft = true
 title = "What is JIT (just-in-time) compiler?"
 date = "2024-08-10T15:17:44-04:00"
 tags = ["compiler", "learning"]
