@@ -1,4 +1,5 @@
 +++
+draft = true
 title = "tiny stark vm"
 date = "2024-07-15T09:09:44-04:00"
 [params]
