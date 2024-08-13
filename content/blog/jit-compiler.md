@@ -4,9 +4,7 @@ date = "2024-08-10T15:17:44-04:00"
 tags = ["compiler", "learning"]
 +++
 
-
-> *Why I care JIT compiler? I have a dream to build my own zk VM from scratch, I'm in the stage of learning each building blocks of ZK + VM*
-
+> _this post is part of my learning journey to understand compiler and compiler architecture. I'm not an expert in compiler, so if you find any mistake, please let me know._
 
 ### What is JIT(just in time compiler)
 
@@ -17,7 +15,7 @@ JIT(just in time compiler) can be said as dynamic code generation, dynamic compi
 
 So for that reason many modern languages mixing this compile stage with execution stage such as using JIT method to get most optimized performances. Dynamic languages like [javascript](https://v8.dev/blog/maglev), [python](https://peps.python.org/pep-0744/) etc getting benefit for faster interpret base of optimized feedbacked compile stages involve.
 
-JIT compiler can be implemented with VM such as [JVM(Java)](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=reference-jit-compiler), [Erlang VM](https://www.erlang.org/doc/apps/erts/beamasm.html), blockchain runtimes such as [EVM](https://www.paradigm.xyz/2024/06/revmc), [Cairo](https://github.com/lambdaclass/cairo_native), [SVM](https://github.com/solana-labs/rbpf) with it's own instruction set.
+JIT compiler can be implemented with VM such as [JVM(Java)](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=reference-jit-compiler), [Erlang VM](https://www.erlang.org/doc/apps/erts/beamasm.html), [Android Runtime](https://source.android.com/docs/core/runtime/jit-compiler) blockchain runtimes such as [EVM](https://www.paradigm.xyz/2024/06/revmc), [Cairo](https://github.com/lambdaclass/cairo_native), [SVM](https://github.com/solana-labs/rbpf).
 
 Or could design like [Julia](https://docs.julialang.org/en/v1/devdocs/eval/#dev-codegen) which behaves like AOT compiler.
 
@@ -25,7 +23,7 @@ Most popular approach is so called as, method JIT, which function as a unit. Dur
 
 ### Tiny JIT implementation
 
-so implement on *super* naive approach to simply get grasp of how it works:
+so implement on _super_ naive approach to simply get grasp of how it works:
 
 - **Interpreter** : Just execute the instruction and while run it profiles to observe if function is hot. And detact if function had already jit compiled, execute native machine code instead of execute instruction.
 - **Profiling** : `execution_count` to track execution time of function. so just simply if funciton got executed 10 times, turned interpreter into jit compile mode.
@@ -39,14 +37,9 @@ One interesting thing i found was, compare to original unix syscall, my machine(
 
 ### jit_compile in Interpreter
 
-So here simple `jit_compile` method of `Interpreter`. There is two part 1) hand-written machine code generation 2) JIT mechanics that envolves write/execute.
-
-Regarding writting ARM 64 bit assembly, there is 31 general purpose register i can utilize. So just perform simple `fn(a + b)-> c`, i can put frist 2 numbers in X0, X1 register, and use X2 for result.
-
-
+So here simple `jit_compile` method of `Interpreter`. There is two part 1) hand-written machine code generation 2) JIT mechanics that envolves write/execute. Opcode used here is [ADD(immediate)](https://developer.arm.com/documentation/dui0801/g/A64-General-Instructions/ADD--immediate-?lang=en).
 
 Regarding JIT mechanics, i got idea from [this tutorial](https://github.com/spencertipping/jit-tutorial), but in mac it returned permission error `mmap failed: Permission denied (os error 13)`. So i first gave write permission of virtual address space, and then copy the machine code to permissioned space using [`memcopy` syscall](https://man7.org/linux/man-pages/man3/memcpy.3.html)(= `copy_nonoverlapping`). And last, with [`mprotect` syscall ](https://man7.org/linux/man-pages/man2/mprotect.2.html) provided execution permission to new address space to run machine code in further execution.
-
 
 ```rust
 fn jit_compile(&self, pc: usize) -> (*mut u8, usize) {
@@ -106,6 +99,8 @@ So as we take a look at simple JIT compile, it is indeed not optimal to turn raw
 
 So instead of turning our hot function to raw machine code, we can turn it into [LLVM IR](https://llvm.org/docs/LangRef.html#id1899) and let LLVM to handle our IR to machine code so it abstracts away many of the low-level details that allows to focus on higher-level optimizations and language features.
 
+Also another cool compiler backend [cranelift](https://cranelift.dev/) worth checking out.
+
 ```rust
 // Direct Machine Code Generation (simplified)
 fn generate_add(x: i32, y: i32) -> Vec<u8> {
@@ -132,9 +127,9 @@ fn generate_add_llvm(x: i32, y: i32) -> String {
 }
 ```
 
-### Final thoughts
+### Security
 
-- while learning, i found interesting to learn more about **LLVM**, which is a compiler framework and intermediate representation that supports JIT compilation and runtime optimization.
+JIT's sophisticated optimization could lead in security issue. Check out [this blog](https://googleprojectzero.blogspot.com/2020/09/jitsploitation-one.html?m=1) for further information.
 
 ### Futher reading
 
@@ -142,12 +137,12 @@ fn generate_add_llvm(x: i32, y: i32) -> String {
 
 this basic tutorials about [Unix shell](https://github.com/spencertipping/shell-tutorial), [JIT](https://github.com/spencertipping/jit-tutorial) helped alot on understanding.
 
-- https://webkit.org/blog/3362/introducing-the-webkit-ftl-jit/
+- [webkit FTI JIT](https://webkit.org/blog/3362/introducing-the-webkit-ftl-jit/)
 
-- https://stackoverflow.com/questions/41450226/just-in-time-jit-vs-ahead-of-time-aot-compilation-in-angular
-- https://blog.nrwl.io/angular-is-aot-worth-it-8fa02eaf64d4
-- https://www.reddit.com/r/Compilers/comments/19ctf7p/aot_vs_jit_comilation/
-- https://source.android.com/docs/core/runtime/jit-compiler
+- There is some discussion around AOT vs JIT, [Angular: Is AOT Worth It?](https://blog.nrwl.io/angular-is-aot-worth-it-8fa02eaf64d4), [aot_vs_jit_comilation](https://www.reddit.com/r/Compilers/comments/19ctf7p/aot_vs_jit_comilation/)
+
+- Most popu
+
 - https://www.linkedin.com/pulse/understanding-jit-aot-compilation-dart-marwa-aldaya-tnycf/
 - https://www.ibm.com/docs/en/sdk-java-technology/8?topic=reference-jit-compiler
 - https://cranelift.dev/
