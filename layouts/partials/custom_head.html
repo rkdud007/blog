@@ -1,63 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head> </head>
-  <style>
-    body {
-      font-family: monospace;
-      text-transform: lowercase;
-      font-size: 110%;
-    }
+    <head>
+        {{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
+    </head>
+    <style>
+        body {
+            font-family: JetBrains Mono;
+            font-size: 90%;
+        }
 
-    code {
-      font-size: 95% !important;
-      text-transform: none !important;
-    }
+        code {
+            font-size: 98% !important;
+            text-transform: none !important;
+        }
 
-    header {
-      margin-bottom: 25px;
-    }
+        header {
+            margin-bottom: 25px;
+        }
 
-    .image {
-      display: flex;
-      justify-content: center;
-    }
+        .image {
+            display: flex;
+            justify-content: center;
+        }
 
-    blockquote {
-      font-size: 95% !important;
-      margin-bottom: 1.5rem;
-    }
+        blockquote {
+            font-size: 98% !important;
+            margin-bottom: 1.5rem;
+        }
 
-    footer {
-      display: none;
-    }
+        footer {
+            display: none;
+        }
 
-    nav a {
-      color: #444;
-    }
+        nav a {
+            color: #444;
+        }
 
-    nav a:hover {
-      color: white;
-      background: #444;
-    }
+        nav a:hover {
+            color: white;
+            background: #444;
+        }
 
-    hr {
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-    }
+        hr {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
 
-    code {
-      background-color: #565656;
-    }
+        code {
+            background-color: #565656;
+        }
 
-    @media (prefers-color-scheme: dark) {
-      nav a {
-        color: whitesmoke;
-      }
+        @media (prefers-color-scheme: dark) {
+            nav a {
+                color: whitesmoke;
+            }
 
-      nav a:hover {
-        color: #333;
-        background: white;
-      }
-    }
-  </style>
+            nav a:hover {
+                color: #333;
+                background: white;
+            }
+        }
+    </style>
 </html>

@@ -2,13 +2,19 @@
 title = "pia park (dot) me"
 +++
 
-<img src="/images/pfp.jpg" alt="my pfp" style="width:100px;height:100px;border-radius:50%;">
-
-### Hello, I’m Pia!
+<div style="display: flex; align-items: center;">
+ <div style="flex: 1;">
+    <img src="/images/pfp.png" alt="my pfp" style="width:150px;height:150px;">
+  </div>
+  <div style="flex: 1;">
 
 **x**: [@piapark_eth\_](https://x.com/piapark_eth)\
 **github**: [pia](https://github.com/rkdud007) \
 **linkedin**: [pia park](https://www.linkedin.com/in/pia-park-436336221/)
+
+</div>
+ 
+</div>
 
 I love learning engineering and mathematics \
 I love solving hard problems and building things in public \
