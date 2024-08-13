@@ -1,7 +1,7 @@
 +++
 title = "Mini Storage Proofs"
 date = "2024-03-15T09:09:44-04:00"
-tags = ["tech", "storage-proof"]
+tags = ["computer science", "data structure", "storage-proof"]
 +++
 
 The intended audience of this post is someone who wants to understand storage proof in a handy way with more detailed code as an example.

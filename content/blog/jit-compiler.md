@@ -1,17 +1,19 @@
 +++
 title = "What is JIT (just-in-time) compiler?"
 date = "2024-08-10T15:17:44-04:00"
-tags = ["compiler", "learning"]
+tags = ["computer science", "compiler" ]
 +++
 
 > _this post is part of my learning journey to understand compiler and compiler architecture. I'm not an expert in compiler, so if you find any mistake, please let me know._
 
-### What is JIT(just in time compiler)
+### What is JIT (just in time compiler)
+
+I kinda know what compiler does, but didn't get what does it mean by "just in time" and why it is important. So decided to dive more deep into it.
 
 ![jit](/images/jit.png)
 (diagram from [lecture](https://vod.video.cornell.edu/media/1_ltb1t94i))
 
-JIT(just in time compiler) can be said as dynamic code generation, dynamic compilation. Compare to static compilation that just purely compile without any knowlege runtime, with JIT, **compiler can get knowlege of runtime inforamtion, that can be used for optimized execution**. This is impossible of AOT(ahead of time), static compilation because compile stage and execution stage is totally seperate.
+JIT (just in time compiler) can be said as dynamic code generation, dynamic compilation. Compare to static compilation that just purely compile without any knowlege runtime, with JIT, **compiler can get knowlege of runtime inforamtion, that can be used for optimized execution**. This is impossible of AOT(ahead of time), static compilation because compile stage and execution stage is totally seperate.
 
 So for that reason many modern languages mixing this compile stage with execution stage such as using JIT method to get most optimized performances. Dynamic languages like [javascript](https://v8.dev/blog/maglev), [python](https://peps.python.org/pep-0744/) etc getting benefit for faster interpret base of optimized feedbacked compile stages involve.
 
@@ -141,17 +143,12 @@ this basic tutorials about [Unix shell](https://github.com/spencertipping/shell-
 
 - There is some discussion around AOT vs JIT, [Angular: Is AOT Worth It?](https://blog.nrwl.io/angular-is-aot-worth-it-8fa02eaf64d4), [aot_vs_jit_comilation](https://www.reddit.com/r/Compilers/comments/19ctf7p/aot_vs_jit_comilation/)
 
-- Most popu
+And some other resources that i found interesting while researching
 
 - https://www.linkedin.com/pulse/understanding-jit-aot-compilation-dart-marwa-aldaya-tnycf/
 - https://www.ibm.com/docs/en/sdk-java-technology/8?topic=reference-jit-compiler
-- https://cranelift.dev/
 - https://kobzol.github.io/rust/rustc/2024/03/15/rustc-what-takes-so-long.html
 - https://ucarion.com/llvm-rust-toy-compiler
 - https://www.cs.cornell.edu/courses/cs6120/2020fa/self-guided/
 - https://wolchok.org/posts/how-to-read-arm64-assembly-language/
 - https://mcyoung.xyz/2023/08/01/llvm-ir/
-
-### why i was curious
-
-so i have a big strong goal to build my own zk vm (which atm i have looots of missing building blocks). I was reading [Cairo VM paper](https://eprint.iacr.org/2021/1063.pdf) but sudden at section 2.2.3, Advanced optimizations (just in time compilation and bytecode generation), i just COULDN'T understand the intuition of WHAT DOES IT MEAN BY you insert the machine code! So i decided to dive more deep into it.

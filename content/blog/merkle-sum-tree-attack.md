@@ -1,7 +1,7 @@
 +++
 title = "Merkle Sum Tree Attack PoC"
 date = "2024-01-02T15:17:44-04:00"
-tags = ["cryptography", "security"]
+tags = ["cryptography","data structure", "security"]
 +++
 
 # Overview
