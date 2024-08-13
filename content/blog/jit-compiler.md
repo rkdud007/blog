@@ -1,6 +1,6 @@
 +++
 title = "What is JIT (just-in-time) compiler?"
-date = "2024-08-10T15:17:44-04:00"
+date = "2024-08-12T15:17:44-04:00"
 tags = ["computer science", "compiler" ]
 +++
 
