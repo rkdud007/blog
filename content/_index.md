@@ -13,10 +13,13 @@ title = "pia park (dot) me"
 **linkedin**: [pia park](https://www.linkedin.com/in/pia-park-436336221/)
 
 </div>
- 
+
 </div>
 
-I love learning engineering and mathematics \
+Hi!, welcome to my personal site. Here is some keywords I'd like to share:
+
+- *Learning*: I'm forever learner. There are so many interesting things are building everyday, so many people to learn from various aspect, and generally learning challenging things are really fun. I learn fast when I actually get my hands dirty. So either try to implement from scratch, try to playaround it or write post about explaining concept to other people.
+
 I love solving hard problems and building things in public \
 I love understanding architecture and architect systems
 
