@@ -16,8 +16,6 @@ title = "pia park (dot) me"
 
 </div>
 
-Hi!, welcome to my personal site. Here is some keywords I'd like to share:
-
 I love learning engineering and mathematics \
 I love solving hard problems and building things in public \
 I love understanding architecture and architect systems
