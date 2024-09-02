@@ -19,7 +19,7 @@ At some point, I felt like I got a superpower. I could easily turn the ideas I h
 
 Then I realized there was a wall between me and the world, which was language. I couldn't access information in English, and I couldn't share my ideas or stories in English. I had been consuming information that was proxied by other people who translated English into Korean.
 
-So I became obsessed with expanding my world by naturally using this language as a tool. I jumped on a flight for the first time, forcing myself to set all environments to English -- read/write/think/speak/listen, almost radically trying to forget I could speak Korean.
+So I became obsessed with expanding my world by naturally using language as a tool. I jumped on a flight for the first time, forcing myself to set all environments to English -- read/write/think/speak/listen, almost radically trying to forget I could speak Korean.
 
 When I got to share my ideas more naturally, when I got to make close relationships with people, when I got to access pretty much all kinds of major information on the internet -- and pretty much every single time I realize it even now -- I feel so much freedom and joy from having this superpower. I'd like to call it *"The joy from expansion of self through curiosity mixed with the craving for freedom"*.
 
@@ -31,7 +31,7 @@ During my existence, I could view my world and self in various directions with s
 
 When I meet a person from a totally different background, I'm learning about their world. How they view things, what their assumptions and perceptions are toward things, and what their natural reactions and preferences are. This explains many cultural realizations that have broadened my view of life.
 
-In lots of cases, observations and experiences are stacking up. With these files of data, we can figure out patterns that we name as realizations. They can be true but may be denied by a later case. But in any way, we are stating some realizations -- which are knowledge. We are stacking whole human beings' knowledge throughout history and categorizing the dozens of pieces of knowledge that we are learning.
+In lots of cases, observations and experiences are stacking up. With these files of data, we can figure out patterns that we name as realizations. They can be true but may be denied by a later case. But in any way, we are stating some realizations -- which are knowledge. We are stacking whole human beings' knowledge throughout history and categorizing the dozens of pieces of knowledge that's what we are learning.
 
 I believe learning should be enjoyable. We are learning not to become successful or famous... we are learning to understand each other. Each other, including people and the whole universe. Just like the enjoyment of getting to know each other, there's enjoyment in understanding the world, understanding technology, and understanding phenomena. The more we learn, the better we can understand what's happening behind the scenes. This gives joy and also provides wisdom for making better decisions.
 
@@ -51,4 +51,4 @@ I'm no longer learning by force -- external input that stimulates inner cravings
 And I know to understand properly, it takes time. It takes lots of effort to solve the puzzle, dozens and dozens of times of practice to get familiar with the language -- language in terms of high-level interface that represents abstraction. And the more fundamental truth we are craving, the more time it takes and the more challenging it is. But it's powerful, like the beauty of math. Every phenomenon is explained in one single abstraction.
 
 So yes, I'll keep learning while not losing curiosity for the world. I'll open and expand my world wider.
-Consciously listen to where my passion is heading, and enjoy the hard work toward freedom.
+Consciously listen to where my passion is heading, and enjoy the hard work toward freedom :)
