@@ -39,7 +39,9 @@ Pretty straight forward. Just compare keys with target key to find from root nod
 
 ## Resources found it helpful
 
+- https://www.databass.dev/: main motivation
 - https://youtu.be/aZjYr87r1b8?si=etqU3TXUItqvLsim: helpful to understand "why" b-tree is useful in database.
 - https://www.youtube.com/watch?v=0SCtnf84QrI&list=PL8FaHk7qbOD41EHkD7CgQuRw1jpH_Fv7-&index=1&t=1s : helpful to get sense with Big O with tree
 - https://www.youtube.com/watch?v=K1a2Bk8NrYQ: visualization video for B-tree
 - https://www.cs.usfca.edu/~galles/visualization/BTree.html: visualization page, can play around with insert, find, delete operation.
+- https://cglab.ca/~abeinges/blah/rust-btree-case/: detail explain on BtreeMap implementation in rust std library
