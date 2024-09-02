@@ -1,7 +1,6 @@
-
 +++
 title = "just a story about joy of learning"
-date = "2024-08-28T15:17:44-04:00"
+date = "2024-09-02T10:17:44-04:00"
 tags = ["life"]
 +++
 
