@@ -20,7 +20,7 @@ I love learning engineering and mathematics \
 I love solving hard problems and building things in public \
 I love understanding architecture and architect systems
 
-More specifically, I enjoy building with rust 🦀. Interested in systems programming, distributed system, cryptography, zero-knowledge proof.
+At the moment I enjoy building with rust 🦀. Interested in systems programming, distributed system, cryptography, zero-knowledge proof.
 
-I'm currently working at [@herodotus.dev](https://github.com/HerodotusDev) as a software engineer. \
+Currently working at [@herodotus.dev](https://github.com/HerodotusDev) as a software engineer. \
 Also computer science major at [@korea university](https://korea.edu/mbshome/mbs/en/index.do).
