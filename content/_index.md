@@ -16,11 +16,14 @@ title = "pia park (dot) me"
 
 </div>
 
-I love learning engineering and mathematics \
-I love solving hard problems and building things in public \
-I love understanding architecture and architect systems
+_I love learning engineering and mathematics_ \
+_I love solving hard problems and building things in public_ \
+_I love understanding architecture and architect systems_
 
-At the moment I enjoy building with rust 🦀. Interested in systems programming, distributed system, cryptography, zero-knowledge proof.
+At the moment, I enjoy building with Rust 🦀. I’m interested in systems programming, distributed systems, cryptography, and zero-knowledge proofs.
+
+- interested in unique real-world applications that combine zero-knowledge proofs or other cryptographic concepts (e.g., MPC, FHE), questioning about where verifiable computation is required or beneficial.
+- curious about different VM design choices and their components (e.g., compiler, execution, state design..), particularly in the context of zkVMs or blockchain VMs.
 
 Currently working at [@herodotus.dev](https://github.com/HerodotusDev) as a software engineer. \
 Also computer science major at [@korea university](https://korea.edu/mbshome/mbs/en/index.do).
