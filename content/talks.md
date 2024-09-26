@@ -41,3 +41,5 @@ Some talks
     background-color: #0056b3;
   }
 </style>
+
+- Deep dive in proof systems with Pia from Herodotus.dev: [youtube](https://www.youtube.com/watch?v=2GHI0Y92Vfg)
