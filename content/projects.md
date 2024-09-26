@@ -3,9 +3,9 @@ title = 'Projects'
 menu = "main"
 +++
 
-I enjoy building in public—because sharing ideas and code is playing a positive-sum game ≽^-⩊-^≼
+I enjoy building in public — because sharing ideas and code is playing a positive-sum game ≽^-⩊-^≼
 
-- When I encounter new technology or an interesting concept, I often think about its potential applications, consider how it could be combined with other ideas, and I build experimental projects around it and share them publicly.
+- When I encounter new technology or an interesting concept, I often think about its potential applications, consider how it could be combined with other ideas, and I build experimental projects around it pretty quick and share them publicly.
 - I like to create and contribute to open-source projects, CLI tools, or libraries that I find useful and share them so others can benefit.
 
 Here are some of my projects. Sometimes I'm a bit lazy about updating this list. For more, [check out my GitHub](https://github.com/rkdud007) for the latest!
