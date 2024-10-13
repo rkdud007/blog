@@ -2,6 +2,7 @@
 title = "Fake it till you make it vs LARPing"
 date = "2024-10-12T21:59:43+09:00"
 tags = ["life"]
+draft = true
 +++
 
 Today I'll gonna talk about small observation or philosophy -- for fun lol.
@@ -12,7 +13,7 @@ I drew a coordinate plane about the x-axis, how much you are good at things, and
 
 The most obvious ones are case 1,4. If you already have high skill and achievement, first it's pretty not difficult to realize that fact wherever the environment is, second the case of having low self-awareness is I think either by wrong/limited environment or personality(less confident/low satisfaction bar etc). But anyway to become the right-hand side of the x-axis, to "actually" become good at things takes time and consistent hard work so either 1,4 is a pretty straightforward situation.
 
-So things get tricky in case 2,3. Because **everyone starts from the left side of the x-axis**. Obviously, no one got the best at something in the first place. So, everyone - young people who just started their career - who wants to achieve these will try to find a way to accelerate their growth. And base on my observation, it tends to be on the boundary of *Fake it till you make it vs LARPing*.
+So things get tricky in case 2,3. Because **everyone starts from the left side of the x-axis**. Obviously, no one got the best at something in the first place. So, everyone - young people who just started their career - who wants to achieve these will try to find a way to accelerate their growth. And base on my observation, it tends to be on the boundary of _Fake it till you make it vs LARPing_.
 
 > "Fake it till you make it" (or "Fake it until you make it") is an aphorism that suggests that by imitating confidence, competence, and an optimistic mindset, a person can realize those qualities in their real life and achieve the results they seek.
 

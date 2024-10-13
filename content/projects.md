@@ -3,20 +3,17 @@ title = 'Projects'
 menu = "main"
 +++
 
-I enjoy building in public — because sharing ideas and code is playing a positive-sum game ≽^-⩊-^≼
-
-- When I encounter new technology or an interesting concept, I often think about its potential applications, consider how it could be combined with other ideas, and I build experimental projects around it pretty quick and share them publicly.
-- I like to create and contribute to open-source projects, CLI tools, or libraries that I find useful and share them so others can benefit.
+Sharing ideas and code is the best way to learn together <3
 
 Here are some of my projects. Sometimes I'm a bit lazy about updating this list. For more, [check out my GitHub](https://github.com/rkdud007) for the latest!
 
-⭐️ **Highlighted Projects**
+⭐️
 
-- **xxfunc**: [GitHub](https://github.com/rkdud007/xxfunc), [Post](https://x.com/piapark_eth/status/1825051859985330598) | Serverless functions on Reth using exex. I wanted to experiment with exex and believe in the potential of serverless.
-- **cairovm-verifier**: [GitHub](https://github.com/iosis-tech/cairovm-verifier), [Post](https://x.com/piapark_eth/status/1814387878660571496) | Rust implementation of a CairoVM verifier with WebAssembly bindings. It was part of exploration into zk in a client-side context.
-- **alloy-merkle-tree**: [GitHub](https://github.com/rkdud007/alloy-merkle-tree) | Merkle Tree implementation in Rust. Built because there was no standard MPT implementation in Rust, and I wanted to use this primitive in [alloy](https://github.com/alloy-rs).
-- **zetina**: [GitHub](https://github.com/iosis-tech/zetina) | Shared P2P zk prover network. Explored the idea of a minimal prover network on top of lib-p2p.
-- **sp1-storage-proof**: [GitHub](https://github.com/rkdud007/sp1-storage-proof), [Post](https://x.com/jtguibas/status/1758227197654114791) | Built to experiment with the speed of building a zk-storage proof program on top of a RISC-V based zkVM.
+- **xxfunc**: [GitHub](https://github.com/rkdud007/xxfunc), [Post](https://x.com/piapark_eth/status/1825051859985330598) | Serverless functions on Reth using exex.
+- **cairovm-verifier**: [GitHub](https://github.com/iosis-tech/cairovm-verifier), [Post](https://x.com/piapark_eth/status/1814387878660571496) | Rust implementation of a CairoVM verifier with WebAssembly bindings.
+- **alloy-merkle-tree**: [GitHub](https://github.com/rkdud007/alloy-merkle-tree) | Merkle Tree implementation in Rust.
+- **zetina**: [GitHub](https://github.com/iosis-tech/zetina) | Shared P2P zk prover network.
+- **sp1-storage-proof**: [GitHub](https://github.com/rkdud007/sp1-storage-proof) | Experimental zk-storage proof program on top of a RISC-V based zkVM.
 
 **_Work_**
 
