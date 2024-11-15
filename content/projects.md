@@ -9,6 +9,7 @@ Here are some of my projects. Sometimes I'm a bit lazy about updating this list.
 
 ⭐️
 
+- **solchip8**: [Github](https://github.com/rkdud007/solchip8) | SolChip8 is the first 100% on-chain Chip8 emulator smart contract.
 - **xxfunc**: [GitHub](https://github.com/rkdud007/xxfunc), [Post](https://x.com/piapark_eth/status/1825051859985330598) | Serverless functions on Reth using exex.
 - **cairovm-verifier**: [GitHub](https://github.com/iosis-tech/cairovm-verifier), [Post](https://x.com/piapark_eth/status/1814387878660571496) | Rust implementation of a CairoVM verifier with WebAssembly bindings.
 - **alloy-merkle-tree**: [GitHub](https://github.com/rkdud007/alloy-merkle-tree) | Merkle Tree implementation in Rust.
