@@ -1,111 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    {{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
-    <meta
-      name="google-site-verification"
-      content="LCcxxDJduWMLplxojlJpPGg-Ns5JtE4ZcsZdPUB1Evg" />
-  </head>
-  <style>
-    body {
-      font-family: JetBrains Mono;
-      font-size: 95%;
-      background: whitesmoke;
-      color: black !important;
-    }
+    <head>
+        {{ if .Param "math" }} {{ partialCached "math.html" . }} {{ end }}
+        <meta
+            name="google-site-verification"
+            content="LCcxxDJduWMLplxojlJpPGg-Ns5JtE4ZcsZdPUB1Evg"
+        />
+    </head>
+    <style>
+        body {
+            font-family: JetBrains Mono;
+            font-size: 95%;
+            background: whitesmoke;
+            color: black !important;
+        }
 
-    code {
-      font-size: 98% !important;
-      text-transform: none !important;
-      color: white !important;
-    }
+        code {
+            font-size: 98% !important;
+            text-transform: none !important;
+            color: white !important;
+        }
 
-    header {
-      margin-bottom: 25px;
-      color: black !important;
-    }
+        header {
+            margin-bottom: 25px;
+            color: black !important;
+        }
 
-    a {
-      color: #3273dc;
-    }
+        a {
+            color: #3273dc;
+        }
 
-    blockquote {
-      color: #444;
-    }
+        blockquote {
+            color: #444;
+        }
 
-    h2,
-    h1,
-    h3,
-    strong {
-      color: black !important;
-    }
+        h2,
+        h1,
+        h3,
+        h4,
+        strong {
+            color: black !important;
+        }
 
-    .image {
-      display: flex;
-      justify-content: center;
-    }
+        .image {
+            display: flex;
+            justify-content: center;
+        }
 
-    blockquote {
-      font-size: 98% !important;
-      margin-bottom: 1.5rem;
-    }
+        blockquote {
+            font-size: 98% !important;
+            margin-bottom: 1.5rem;
+        }
 
-    footer {
-      display: none;
-    }
+        footer {
+            display: none;
+        }
 
-    nav a {
-      color: #444;
-    }
+        nav a {
+            color: #444;
+        }
 
-    nav a:hover {
-      color: white;
-      background: #444;
-    }
+        nav a:hover {
+            color: white;
+            background: #444;
+        }
 
-    hr {
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-    }
+        hr {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
 
-    code {
-      background-color: #565656;
-    }
+        code {
+            background-color: #565656;
+        }
 
-    /* Mobile-friendly adjustments */
-    @media (max-width: 768px) {
-      body {
-        font-size: 18px;
-      }
+        /* Mobile-friendly adjustments */
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px;
+            }
 
-      pre {
-        font-size: 0.8em;
-        padding: 0px;
-      }
+            pre {
+                font-size: 0.8em;
+                padding: 0px;
+            }
 
-      h1,
-      h2,
-      h3 {
-        font-size: 1.5em; /* Adjust heading sizes */
-      }
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-size: 1.5em; /* Adjust heading sizes */
+            }
 
-      code {
-        font-size: 90% !important;
-      }
+            code {
+                font-size: 90% !important;
+            }
 
-      nav a {
-        color: #444;
-        font-size: 0.9em; /* Reduce font size for navigation links */
-      }
+            nav a {
+                color: #444;
+                font-size: 0.9em; /* Reduce font size for navigation links */
+            }
 
-      .image {
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center images */
-      }
+            .image {
+                flex-direction: column; /* Stack images vertically */
+                align-items: center; /* Center images */
+            }
 
-      blockquote {
-        font-size: 90% !important; /* Reduce blockquote font size */
-      }
-    }
-  </style>
+            blockquote {
+                font-size: 90% !important; /* Reduce blockquote font size */
+            }
+        }
+    </style>
 </html>
