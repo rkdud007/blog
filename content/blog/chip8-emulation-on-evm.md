@@ -13,6 +13,7 @@ This post explains a project emulates CHIP-8 program on EVM. You can check out t
 [CHIP-8](https://en.wikipedia.org/wiki/CHIP-8) is an interpreted programming language, initially used on the 8-bit microcomputers made in the mid-1970s.
 
 ![1](/images/chip8/Telmac1800.jpg)
+> *Figure 1: The [Telmac 1800](https://en.wikipedia.org/wiki/Telmac_1800) microcomputer used run CHIP-8 first.*
 
 To fully run a CHIP-8 program, the main resources needed are 4,096 (0x1000) bytes of memory, 16 8-bit registers, and a stack, which is achievable even on relatively limited computational resources compared to modern computers.
 
