@@ -25,9 +25,9 @@ I desire freedom because I trust my own choices. I know I dive deeply into diffi
 
 Once, I had a conversation about regret. After careful thought, my answer was "No". Sure, there were moments I wished I'd known it a little bit earlier (e.g I wish I knew the world more early) or times I made mistakes out of immaturity. But from a broader perspective, every moment in my life was decided by my own *Free Will*. I tried my best at every point. With the limited information I had at the time, I followed the choices that made sense to me, cutting off external judgments and minimizing the anxiety of risk-taking.
 
-I often like to ask myself: “Is this really what you want?”, “Is the day truly meaningful to you?”, and “Are you sure you won’t regret doing—or not doing—this?”
+I ususally like to ask myself: “Is this really what you want?”, “Is the day truly meaningful to you?”, and “Are you sure you won’t regret doing—or not doing—this?”
 
-I enjoy seeing life as a run, guided by two important factors: *direction* and *speed*.
+I enjoy seeing life as a running that contains two important factors: *direction* and *speed*.
 
 Generally, I run fast. I work hard and put all energy I can. And I really pushing myself to grow forward every day. Feels like drawing new color on paper.  Occasionally, I stop to check my direction. If I notice my speed dropping or feel uncertain where I’m headed, I ask myself if this is truly a path I won’t regret heading. When in doubt, I slow down, take a deep breath, think carefully, imagine a far future, and dream big. [Then I make a decision](https://www.piapark.me/life-is-like-a-box-of..-binary-trees/) - whether I change or keep my direction - I start to run really hard just like it's ok to die now while running. I'll not regret it, even though I might not reach the big dream, because I really enjoyed every single moment of figuring out where to go and pushing myself to do my best.
 
@@ -37,4 +37,4 @@ So I try to genuinely respect my free will, listen carefully to my feelings, sen
 
 <img src="/images/free-dom.png" alt="free-dom" width="300" >
 
-It didn't mean I am free. It’s more that what I live for is to gain true freedom — in that sense, I’m not free because I’m obsessed with it. Eren Yeager is called 自由の奴隷 (slave of freedom). But I wonder — does he regret any decision he had to make? No. Even if he could go back, would he make the same decisions? Yes. What he lived for was to gain freedom, and that was the meaning of his life. He tried his very best with the limited information he had at the time. As humans, if we are passionate about something, it’s natural to become obsessed (ideally at a healthy level). I believe that’s what makes life colorful and unique.
+It didn't mean I am free. It’s more that what I live for is to gain true freedom — in that sense, I’m not free because I’m obsessed with it. Eren Yeager is called 自由の奴隷 (slave of freedom). But I wonder — does he regret any decision he had to make? No. Even if he could go back, would he make the same decisions? Yes. What he lived for was to gain freedom, and that was the meaning of his life. He tried his very best with the limited information he had at the time. As humans, if we are passionate about something, it’s natural to become obsessed (ideally at a healthy level). I believe that’s what makes life colorful and unique. And that's what keeps us alive.
