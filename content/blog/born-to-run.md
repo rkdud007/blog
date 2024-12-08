@@ -15,7 +15,7 @@ tags = ["life"]
 
 ---
 
-Everyone has their own core values - *what we live for*. We might list values like: money, power, reputation, freedom, truth and so on.
+Everyone has different priorities in life in terms of *what we live for*: money, power, reputation, freedom, truth etc
 
 Among all these tempting values, my number one is *Freedom*. I want the freedom to learn whatever I want, to communicate with inspiring people all over the world, to build whatever I choose and share it with the world. I value people and environments where I can dream without limits.
 
