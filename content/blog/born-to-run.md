@@ -27,6 +27,8 @@ Once, I had a conversation about regret. After careful thought, my answer was "N
 
 I ususally like to ask myself: “Is this really what you want?”, “Is the day truly meaningful to you?”, and “Are you sure you won’t regret doing—or not doing—this?”
 
+
+
 I enjoy seeing life as a running that contains two important factors: *direction* and *speed*.
 
 Generally, I run fast. I work hard and put all energy I can. And I really pushing myself to grow forward every day. Feels like drawing new color on paper.  Occasionally, I stop to check my direction. If I notice my speed dropping or feel uncertain where I’m headed, I ask myself if this is truly a path I won’t regret heading. When in doubt, I slow down, take a deep breath, think carefully, imagine a far future, and dream big. [Then I make a decision](https://www.piapark.me/life-is-like-a-box-of..-binary-trees/) - whether I change or keep my direction - I start to run really hard just like it's ok to die now while running. I'll not regret it, even though I might not reach the big dream, because I really enjoyed every single moment of figuring out where to go and pushing myself to do my best.
@@ -34,6 +36,8 @@ Generally, I run fast. I work hard and put all energy I can. And I really pushin
 Even if I realize later that my direction was wrong, I still grateful to have that experience. Without it, I wouldn’t have known that I needed to change course. All my memories and mistakes have shaped who I am now.
 
 So I try to genuinely respect my free will, listen carefully to my feelings, sense whether I truly love the direction I’m headed, and give my all when I commit. Even if turns out not - still I have no regrets because I did my best and enjoyed the process. How many time I fall down, turn directions I’ll start running again, and that's where *I feel absolute freedom from direction and speed I decided to commit*.
+
+And to be fully honest, it's SO DIFFICULT. You really need to put a lot of effort into having serious conversations with yourself, and you need to be patient to evaluate whether any of your thoughts or decisions are not just because of shallow emotions. Just trying to navigate myself in the right direction is really, really difficult; I have faced so many times where I just feel like I want to quit and choose whatever direction. I at least try my best until I have conviction in the move I decide to make — it might not be the best move — but as long as I think it makes sense and feel that I have made a reasonable effort, then I don't regret the direction. I can freely run at my own speed with it.
 
 <img src="/images/free-dom.png" alt="free-dom" width="300" >
 
