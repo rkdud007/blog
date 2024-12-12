@@ -15,6 +15,8 @@ _So dream optimistically, execute consistently_
 
 _Stay curious, be open minded_
 
+_Take responsibility of decisions, there is no excuse_
+
 _Be kind, be humble, be grateful_
 
 _And whatever, love the moment_
