@@ -17,7 +17,7 @@ title = "pia park (dot) me"
 
 </div>
 
-> _I'm currently in a phase of exploring hard problems by expanding curiosity and reflecting meaning of ['great work'](https://www.piapark.me/manifesto/). I'm open to discussions — feel free to reach out on X/email if you'd like to chat_
+ _I'm currently in a phase of exploring hard problems by expanding curiosity and reflecting meaning of ['great work'](https://www.piapark.me/manifesto/). I'm open to discussions — feel free to reach out on X/email if you'd like to chat_
 
 I enjoy building [projects](https://www.piapark.me/projects/) in public and participating in [activities](https://www.piapark.me/misc/) to learn and contribute \
 I’m also currently studying computer science at [Korea University](https://www.korea.edu/sites/en/index.do)
