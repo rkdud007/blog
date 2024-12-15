@@ -19,17 +19,18 @@ title = "pia park (dot) me"
 
 > _I'm currently in a phase of exploring hard problems by expanding curiosity and reflecting meaning of ['great work'](https://www.piapark.me/manifesto/). I'm open to discussions — feel free to reach out on X/email if you'd like to chat_
 
-
-I enjoy building [projects](https://www.piapark.me/projects/) in public and participating in [activities](https://www.piapark.me/misc/) to learn and contribute to the community \
+I enjoy building [projects](https://www.piapark.me/projects/) in public and participating in [activities](https://www.piapark.me/misc/) to learn and contribute \
 I’m also currently studying computer science at [Korea University](https://www.korea.edu/sites/en/index.do)
 
-For around past two years, been working at [herodotus.dev](https://herodotus.dev) solving the challenge of fragmented data in blockchain scaling through cryptography included rust engineering/product
+For around past two years, been working at [herodotus.dev](https://herodotus.dev) solving the challenge of fragmented data in blockchain scaling via cryptography including rust engineering/product
 
 Here are some technical keywords I have been spending time on
+
 > zk/zkVM, blockchain, rust, cryptography, system programming, engineering, computer science
 
 But now I want to take time to think about what to build and why
 
+>
 >
 
 When I'm not coding, I like to read, [write](https://www.piapark.me/blog/), and take a walk. I also love traveling and exploring different cultures.
