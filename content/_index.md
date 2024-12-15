@@ -17,6 +17,7 @@ title = "pia park (dot) me"
 
 </div>
 
+[this page is underconstruction until I move on next step]
 
 > _I'm currently in a phase of exploring hard problems to expand my curiosity and reflect on the vision I want to align with. I'm open to discussions — feel free to reach out on X/email if you'd like to chat_
 
@@ -24,7 +25,7 @@ title = "pia park (dot) me"
 I enjoy building [projects](https://www.piapark.me/projects/) in public and participating in [activities](https://www.piapark.me/misc/) to learn and contribute to the community \
 I’m also currently studying computer science at [Korea University](https://www.korea.edu/sites/en/index.do)
 
-For the past two years, been working at [herodotus.dev](https://herodotus.dev) solving the challenge of fragmented data in blockchain scaling through cryptography included rust engineering/product
+For around past two years, been working at [herodotus.dev](https://herodotus.dev) solving the challenge of fragmented data in blockchain scaling through cryptography included rust engineering/product
 
 When I'm not coding, I like to read, [write](https://www.piapark.me/blog/), and take a walk. I also love traveling and exploring different cultures.
 
