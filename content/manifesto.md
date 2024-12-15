@@ -30,3 +30,5 @@ _Building great things are not easy_
 _So choose to do hard but great and right work_
 
 _Because, you only live once - theres nothing you can lose_
+
+_Because, you only live once - make a decision you'll not regret_
