@@ -17,9 +17,7 @@ title = "pia park (dot) me"
 
 </div>
 
-[this page is underconstruction until I move on next step]
-
-> _I'm currently in a phase of exploring hard problems to expand my curiosity and reflect on the vision I want to align with. I'm open to discussions — feel free to reach out on X/email if you'd like to chat_
+> _I'm currently in a phase of exploring hard problems by expanding curiosity and reflect on ['great work'](https://www.piapark.me/manifesto/). I'm open to discussions — feel free to reach out on X/email if you'd like to chat_
 
 
 I enjoy building [projects](https://www.piapark.me/projects/) in public and participating in [activities](https://www.piapark.me/misc/) to learn and contribute to the community \
