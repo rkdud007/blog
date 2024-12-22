@@ -8,7 +8,7 @@ title = "pia park (dot) me"
   </div>
   <div style="flex: 1;">
 
-**x**: [piapark_eth](https://x.com/piapark_eth)\
+**x**: [0xpiapark](https://x.com/0xpiapark)\
 **email**: gayeongparkk gmail (dot) com \
 **github**: [pia](https://github.com/rkdud007) \
 **linkedin**: [pia park](https://www.linkedin.com/in/pia-park-436336221/)
