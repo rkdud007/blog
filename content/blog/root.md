@@ -18,3 +18,5 @@ Some lessons I’ve taken away from this are:
 - It’s great to have big dreams and goals, but be patient with the process and learn to enjoy it.
 - Be ready for opportunities instead of chasing them. Focus on becoming better — both as a person and in your work.
 - Life is long, so don’t dwell on small ups and downs. Zoom out and keep perspective.
+
+And merry christmas!🎄
