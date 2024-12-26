@@ -4,6 +4,8 @@ date = "2024-12-25T12:59:43+09:00"
 tags = ["life"]
 +++
 
+*note, this is heavily personal story but it's what composing who i am rn, hope you enjoy :)*
+
 We had a family dinner at Christmas, and my parents shared their journey. They grew up in a rural village in southern Korea, surrounded by fields and the sea. Their parents were a farmer and a fisherman, and life was modest. In the 1980s, they moved to Seoul(big city) for the first time, with no money and no network. My dad couldn’t attempt the university entrance exam again after he failed, and my mom couldn’t even attend university because their parents couldn’t support them. They both needed to earn money as quickly as possible. They met at an office and started their newlywed life in a semi-basement apartment, with just $1,000 in cash.
 
 They worked incredibly hard and saved almost every bit of what they earned. My mom struggled to support the family due to a lack of a degree, and my dad’s salary wasn’t much either. Yet, they wanted to at least buy a house in Seoul. They started studying real estate and took out a loan to buy a house, which pushed their debt to $80,000 at one point. They made many mistakes but learned a lot from them. My dad stayed with the same company for over 30 years, all the while holding onto two dreams  1. One day, our family could afford a house. 2. His child could go to a good university, unlike him and my mom.
