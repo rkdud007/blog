@@ -36,7 +36,7 @@ During 2024, I traveled to Japan, Malaysia, Poland, Brussels, New York, San Fran
 
 So again, thank you for being part of my journey - maybe it’s a tiny chunk of time that seems like nothing in the [macro view](https://youtu.be/4Tm6Z1y3h94?si=TI5YEikhqZ4RIK11) — but it’s okay. I enjoyed every single moment with you.
 
-Excited to meeting, interacting, hanging out, getting to know, reconnecting, and building something together with you in 2025.
+Excited to meeting, interacting, hanging out, getting to know, reconnecting, and building something together with you in 2025. And really wish your happiness and all the best luck on this year again.
 
 Happy New Year!
 
