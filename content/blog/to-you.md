@@ -1,6 +1,6 @@
 +++
 title = "To you"
-date = "2024-12-31T09:09:44-04:00"
+date = "2025-01-01T01:01:44-04:00"
 description = "2024 year recap"
 tags = ["life"]
 +++
