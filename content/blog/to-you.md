@@ -5,7 +5,7 @@ description = "2024 year recap"
 tags = ["life"]
 +++
 
-Hi! Thank you for decide to read this
+Hi! Thank you for deciding to read this
 > In some shape or form, perhaps we’ve interacted in each other’s lives, so I want to thank you for being part of my journey. This letter is my way of wrapping up 2024 and sending letter to you — hope you enjoy it 💌
 
 
