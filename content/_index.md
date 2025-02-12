@@ -20,7 +20,7 @@ title = "pia park (dot) me"
  _[note] I'm currently in a phase of exploring hard problems by expanding curiosity and reflecting meaning of ['great work'](https://www.piapark.me/manifesto/)_
 
 I enjoy building [projects](https://www.piapark.me/projects/) in public and participating in [activities](https://www.piapark.me/misc/) to learn and contribute \
-I’m also currently studying computer science at [Korea University](https://www.korea.edu/sites/en/index.do)g
+I’m also currently studying computer science at [Korea University](https://www.korea.edu/sites/en/index.do)
 
 When I'm not coding, I like to read, [write](https://www.piapark.me/blog/), and take a walk. I also love traveling and exploring different cultures.
 
