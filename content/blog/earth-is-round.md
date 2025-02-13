@@ -8,7 +8,7 @@ At the start of this year, I rotated around the Earth in a full circle for a mon
 
 ![1](/images/rotate.gif)
 
-Since deciding to move on from my job last November, I had been thinking a lot about my next step. I needed a clearer motivation that genuinely come from myself and conviction on why all of this even matters with a bigger picture to double down on something. So, to zoom out, I decided to place myself in random locations on earth by simply following people — [people I respect for various reasons and also consider good friends](https://www.piapark.me/to-you/) — who I’d like to hang out with no matter where they are (and rotating earth in full circle is kinda cool as bonus).
+Since deciding to move on from my job last November, I had been thinking a lot about my next step. I wanted to find a clearer motivation that genuinely come from myself and conviction on why all of this even matters with a bigger picture to double down on something. So, to zoom out, I decided to place myself in random locations on earth by simply following people — [people I respect for various reasons and also consider good friends](https://www.piapark.me/to-you/) — who I’d like to hang out with no matter where they are (and rotating earth in full circle is kinda cool as bonus).
 
 I was a bit worried since it was my first experimental fully solo trip without any work-related planning, so I just tried to be open to new things, new people, and random occasions.
 
