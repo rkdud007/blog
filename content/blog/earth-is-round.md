@@ -4,7 +4,7 @@ date = "2025-02-13T12:59:43+09:00"
 tags = ["life"]
 +++
 
-At the start of this year, I rotated around the Earth in a full circle for a month (Jan 7th ~ Feb 8th): Asia > Europe > America > Asia 
+At the start of this year, I rotated around the Earth in a full circle for a month (Jan 7th ~ Feb 8th): Asia > Europe > America > Asia
 
 ![1](/images/rotate.gif)
 
@@ -16,6 +16,6 @@ So it was an amazing experience. I freely flew across the Earth with just one ca
 
 This confidence came from people who shared small kindnesses: some invited me to dinner, events, hangouts, some accepted my random reach-outs, or even invited me to stay (when I was homeless lol). I feel really grateful to the people I met on this journey — those who were open to friendship, shared experiences and inspirations, and deep conversations about life. It was surprising to realize how many people are genuinely open to connection if I am also being genuine. And this made me feel fulfilled.
 
-Toward the end of my trip, I started to realize that maybe the reason I’m fascinated by cryptography, systems engineering, crypto (a combination of economy and tech), or any other intellectually stimulating and unique things isn’t solely because they are interesting. Actually, that alone isn’t enough. It’s more about the ability to interact, share ideas, and build something with smart, interesting, and curious people — people whose knowledge and understanding of a field form gated niche communities, creating a special intellectual bond that, in many cases, leads to unique friendships which I am looking for.
+Toward the end of my trip, I started to realize that maybe the reason I’m fascinated by cryptography, systems engineering, crypto (a combination of economy and tech), or any other intellectually stimulating and unique things isn’t solely because they are interesting. Motivation also contains expectation to interact, share ideas, and build something with smart, interesting, and curious people — people whose knowledge and understanding of a field form gated niche communities, creating a special intellectual bond that, in many cases, leads to unique friendships which I am looking for.
 
 So, what started as a random journey has, in some way, helped me discover myself and find some genuine motivation. I appreciate every friendship and bond I had with people along the way. So yes, it’s just a small note on my random travel <3
