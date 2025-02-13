@@ -8,7 +8,7 @@ At the start of this year, I rotated around the Earth in a full circle for a mon
 
 ![1](/images/rotate.gif)
 
-Since deciding to move on from my job last November, I had been thinking a lot about my next step. I wanted to find a clearer motivation that genuinely come from myself and conviction on why all of this even matters with a bigger picture to double down on something. So, to zoom out, I decided to place myself in random locations on earth by simply following people — [people I respect for various reasons and also consider good friends](https://www.piapark.me/to-you/) — who I’d like to hang out with no matter where they are (and rotating earth in full circle is kinda cool as bonus).
+Since deciding to move on from my job last November, I had been thinking a lot about my next step. I wanted to find a clearer motivation that genuinely come from myself and conviction on why all of this even matters with a bigger picture to double down on something. So, to zoom out, I decided to place myself in random locations on earth by simply following people , [people I respect for various reasons and also consider good friends](https://www.piapark.me/to-you/) who I’d like to hang out with no matter where they are (rotating earth in full circle is kinda cool and escaping from cold winter of korea as bonus).
 
 I was a bit worried since it was my first experimental fully solo trip without any work-related planning, so I just tried to be open to new things, new people, and random occasions.
 
@@ -18,4 +18,4 @@ Obviously, this confidence came from good people, who shared small kindnesses: t
 
 Toward the end of my trip, I started to realize that maybe the reason I’m fascinated by cryptography, systems engineering, crypto (combination of economy and tech), or any other intellectually stimulating and unique things isn’t just solely because they are interesting in themselves. Actually, that alone isn’t enough to form my conviction. It’s more about the ability to interact and share ideas and build something with smart, interesting, and curious people — people whose knowledge and understanding of a field form gated niche communities, creating a special intellectual bond that, in many cases, leads to unique friendships which I am looking for.
 
-So, what started as a random journey has, in some way, helped me discover myself and some genuine motivation. And most importantly, every friendship and bond I had with people on the way remains as a part of me ❤️.
+So, what started as a random journey has, in some way, helped me discover myself and some genuine motivation. And most importantly, every friendship and bond I had with people on the way remains as a part of me
