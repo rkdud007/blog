@@ -9,9 +9,6 @@ title = "pia park (dot) me"
 ### you might like
 - **work**: checkout [github](https://github.com/rkdud007) and [projects](../projects/) page and [more](../misc)
 - **contact**: find me on [X](https://x.com/0xpiapark) or [email](mailto:gayeongparkk@gmail.com)
-
-
-### I built
 - [chip-8 emulator on EVM](../chip-8-emulation-on-evm/)
 
 ### peronally
