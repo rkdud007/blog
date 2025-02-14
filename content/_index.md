@@ -2,26 +2,24 @@
 title = "pia park (dot) me"
 +++
 
-<div style="display: flex; align-items: center;">
  <div style="flex: 1;">
     <img src="/images/pfp.png" alt="my pfp" style="width:150px;height:150px;">
   </div>
-  <div style="flex: 1;">
 
-**x**: [0xpiapark](https://x.com/0xpiapark)\
-**email**: gayeongparkk gmail (dot) com \
-**github**: [pia](https://github.com/rkdud007) \
-**linkedin**: [pia park](https://www.linkedin.com/in/pia-park-436336221/)
 
-</div>
 
-</div>
+### you might like
+- **work**: checkout [github](https://github.com/rkdud007) and [projects](../projects/) page and [more](../misc)
+- **contact**: find me on [X](https://x.com/0xpiapark) or [email](mailto:gayeongparkk@gmail.com)
 
- _[note] I'm currently in a phase of exploring hard problems by expanding curiosity and reflecting meaning of ['great work'](https://www.piapark.me/manifesto/)_
 
-I enjoy building [projects](https://www.piapark.me/projects/) in public and participating in [activities](https://www.piapark.me/misc/) to learn and contribute \
-I’m also currently studying computer science at [Korea University](https://www.korea.edu/sites/en/index.do)
+### I'm proud of
+- I built a [chip-8 emulator on EVM](../chip-8-emulation-on-evm/) for fun
+- I have a [story](../just-a-story-about-joy-of-learning/) about learning
 
-When I'm not coding, I like to read, [write](https://www.piapark.me/blog/), and take a walk. I also love traveling and exploring different cultures.
+### whats new
+- [travel](connecting-dots-around-the-earth/) to figure out next step
 
-I'm pretty curious about people and their own unique stories - i like to chat about life, philosophy, and technology.
+### peronally
+- I like to [write](../blog) about life and tech
+- I'm pretty curious about [people](../to-you/) and their unique stories
