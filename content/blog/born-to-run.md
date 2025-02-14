@@ -15,7 +15,7 @@ tags = ["life"]
 
 ---
 
-Everyone is seeking differnt things in life - aka, *what we live for*: money, power, reputation, freedom, truth etc
+Everyone is seeking different things in life - aka, *what we live for*: money, power, reputation, freedom, truth etc
 
 My number one is *Freedom*. I want the freedom to learn whatever I want, to communicate with inspiring people all over the world, to build whatever I choose and share it with the world. I value people and environments where I can dream without limits.
 
@@ -25,7 +25,7 @@ I desire freedom because I trust my own choices. I know I dive deeply into diffi
 
 Once, I had a conversation about regret. After careful thought, my answer was "No". Sure, there were moments I wished I'd known it a little bit earlier (e.g I wish I knew the world more early) or times I made mistakes out of immaturity. But from a broader perspective, every moment in my life was decided by my own *Free Will*. I tried my best at every point. With the limited information I had at the time, I followed the choices that made sense to me, cutting off external judgments and minimizing the anxiety of risk-taking.
 
-I ususally like to ask myself: “Is this really what you want?”, “Is the day truly meaningful to you?”, and “Are you sure you won’t regret doing—or not doing—this?”
+I usually like to ask myself: “Is this really what you want?”, “Is the day truly meaningful to you?”, and “Are you sure you won’t regret doing—or not doing—this?”
 
 I enjoy seeing life as a running that contains two important factors: *direction* and *speed*.
 

@@ -464,7 +464,7 @@ In Starknet, we verify with _stateRoot_ to get a valid value. As we retrieved in
                 contract_proof: cast_proof_type(contract_trie_proof),
             };
 
-             // Step 2. Verify the proof and retreive value
+             // Step 2. Verify the proof and retrieve value
             let storage_value = verify(
                 state_commitment, contract_address, storage_address, storage_proof
             );

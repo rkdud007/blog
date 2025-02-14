@@ -152,13 +152,13 @@ The time of executing JIT mechanics is 11.875µs, but the time of executing JIT 
 
 Security can also be another problem. As it involves sophisticated code generation and execution throughout the runtime, there could be exploits if implemented improperly. Check out [this blog](https://googleprojectzero.blogspot.com/2020/09/jitsploitation-one.html?m=1) for example.
 
-### Futher reading
+### Further reading
 
 - [CS 6120: Lesson 11: Dynamic Compilers](https://vod.video.cornell.edu/media/1_ltb1t94i) from Adrian Sampson really helped me on understanding spectrum of compiler/interpreter.
 
 - This basic tutorials about [JIT](https://github.com/spencertipping/jit-tutorial) helped alot on understanding.
 
-- There is some discussion around AOT vs JIT, [Angular: Is AOT Worth It?](https://blog.nrwl.io/angular-is-aot-worth-it-8fa02eaf64d4), [aot_vs_jit_comilation](https://www.reddit.com/r/Compilers/comments/19ctf7p/aot_vs_jit_comilation/) proably more.
+- There is some discussion around AOT vs JIT, [Angular: Is AOT Worth It?](https://blog.nrwl.io/angular-is-aot-worth-it-8fa02eaf64d4), [aot_vs_jit_comilation](https://www.reddit.com/r/Compilers/comments/19ctf7p/aot_vs_jit_comilation/) probably more.
 
 And some other resources that i found interesting while researching
 
