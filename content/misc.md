@@ -5,6 +5,7 @@ menu = "main"
 
 Talks
 
+- 2024.11.07 | The Herodotus Data Processor (HDP) | [youtube](https://youtu.be/s7yBYZ50mVk?si=hj2isMxoEqWHNQFd)
 - 2024.07.07 | 2024 lambda zk week workshops: Building with the Herodotus Data Processor
   <!-- Button to open PDF -->
   <button id="toggleButton" onclick="togglePDF()">Open PDF</button>
