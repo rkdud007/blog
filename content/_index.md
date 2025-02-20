@@ -14,4 +14,4 @@ title = "pia park (dot) me"
 **peronally**
 - I have a [story](../just-a-story-about-joy-of-learning/) about learning
 - I'm pretty curious about [people](../to-you/) and their unique stories
-- [My GPG key](/pubkey.txt)
+- [My PGP key](/pubkey.txt)
