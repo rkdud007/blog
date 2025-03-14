@@ -5,6 +5,8 @@ menu = "main"
 
 Here are some of my projects. Sometimes I'm a bit lazy about updating this list. For more, [check out my GitHub](https://github.com/rkdud007) for the latest!
 
+- **diamond-io**: [Github](https://github.com/MachinaIO/diamond-io) | [Diamond iO](https://eprint.iacr.org/2025/236) implementation 
+- **ress**: [Github](https://github.com/paradigmxyz/ress) | The implementation of Stateless Ethereum client based on Reth
 - **awesome-zkvm**: [Github](https://github.com/rkdud007/awesome-zkvm) | A curated list of zkVM, zero-knowledge virtual machine
 - **solchip8**: [Github](https://github.com/rkdud007/solchip8) | SolChip8 is the first 100% on-chain Chip8 emulator smart contract.
 - **xxfunc**: [GitHub](https://github.com/rkdud007/xxfunc), [Post](https://x.com/piapark_eth/status/1825051859985330598) | Serverless functions on Reth using exex.
