@@ -3,7 +3,10 @@ title = 'Projects'
 menu = "main"
 +++
 
-Here are some of my projects. Sometimes I'm a bit lazy about updating this list. For more, [check out my GitHub](https://github.com/rkdud007) for the latest!
+Here are some of my projects. Sometimes I’m a bit lazy about updating this list. For more, [check out my GitHub](https://github.com/rkdud007) for the latest!  
+
+Some keywords: `cryptography`, `distributed systems`, `blockchain`, `Rust`. I love the challenge of contributing to meaningful projects that seem impossible — things no one has done before.
+
 
 - **diamond-io**: [Github](https://github.com/MachinaIO/diamond-io) | [Diamond iO](https://eprint.iacr.org/2025/236) implementation 
 - **ress**: [Github](https://github.com/paradigmxyz/ress) | The implementation of Stateless Ethereum client based on Reth
