@@ -5,6 +5,42 @@ menu = "main"
 
 Talks
 
+- 2025.04.14 | 2025 ethseoul: What is iO and its application |
+  <!-- Button to open PDF -->
+  <button id="toggleButton" onclick="togglePDF()">Open PDF</button>
+
+<!-- Container for embedded PDF -->
+<div id="pdfContainer" style="display:none; margin-top: 10px;">
+  <iframe id="pdfFrame" src="/pdf/what_is_io_and_its_application.pdf" width="100%" height="500px"></iframe>
+</div>
+
+<script>
+  function togglePDF() {
+    var container = document.getElementById('pdfContainer');
+    var button = document.getElementById('toggleButton');
+    if (container.style.display === 'block') {
+      container.style.display = 'none';
+      button.innerText = 'Open PDF';
+    } else {
+      container.style.display = 'block';
+      button.innerText = 'Close PDF';
+    }
+  }
+</script>
+
+<style>
+  #toggleButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #toggleButton:hover {
+    background-color: #0056b3;
+  }
+</style>
 - 2024.11.07 | The Herodotus Data Processor (HDP) | [youtube](https://youtu.be/s7yBYZ50mVk?si=hj2isMxoEqWHNQFd)
 - 2024.07.07 | 2024 lambda zk week workshops: Building with the Herodotus Data Processor
   <!-- Button to open PDF -->
