@@ -7,17 +7,17 @@ Talks
 
 - 2025.04.14 | 2025 ethseoul: What is iO and its application |
   <!-- Button to open PDF -->
-  <button id="toggleButton" onclick="togglePDF()">Open PDF</button>
+  <button id="toggleButton1" onclick="togglePDF1()">Open PDF</button>
 
 <!-- Container for embedded PDF -->
-<div id="pdfContainer" style="display:none; margin-top: 10px;">
-  <iframe id="pdfFrame" src="/pdf/what_is_io_and_its_application.pdf" width="100%" height="500px"></iframe>
+<div id="pdfContainer1" style="display:none; margin-top: 10px;">
+  <iframe id="pdfFrame1" src="/pdf/what_is_io_and_its_application.pdf" width="100%" height="500px"></iframe>
 </div>
 
 <script>
-  function togglePDF() {
-    var container = document.getElementById('pdfContainer');
-    var button = document.getElementById('toggleButton');
+  function togglePDF1() {
+    var container = document.getElementById('pdfContainer1');
+    var button = document.getElementById('toggleButton1');
     if (container.style.display === 'block') {
       container.style.display = 'none';
       button.innerText = 'Open PDF';
@@ -29,7 +29,7 @@ Talks
 </script>
 
 <style>
-  #toggleButton {
+  #toggleButton1 {
     background-color: #007bff;
     color: white;
     border: none;
@@ -37,24 +37,24 @@ Talks
     border-radius: 5px;
     cursor: pointer;
   }
-  #toggleButton:hover {
+  #toggleButton1:hover {
     background-color: #0056b3;
   }
 </style>
 - 2024.11.07 | The Herodotus Data Processor (HDP) | [youtube](https://youtu.be/s7yBYZ50mVk?si=hj2isMxoEqWHNQFd)
 - 2024.07.07 | 2024 lambda zk week workshops: Building with the Herodotus Data Processor
   <!-- Button to open PDF -->
-  <button id="toggleButton" onclick="togglePDF()">Open PDF</button>
+  <button id="toggleButton2" onclick="togglePDF2()">Open PDF</button>
 
 <!-- Container for embedded PDF -->
-<div id="pdfContainer" style="display:none; margin-top: 10px;">
-  <iframe id="pdfFrame" src="/pdf/lambda_zk_week.pdf" width="100%" height="500px"></iframe>
+<div id="pdfContainer2" style="display:none; margin-top: 10px;">
+  <iframe id="pdfFrame2" src="/pdf/lambda_zk_week.pdf" width="100%" height="500px"></iframe>
 </div>
 
 <script>
-  function togglePDF() {
-    var container = document.getElementById('pdfContainer');
-    var button = document.getElementById('toggleButton');
+  function togglePDF2() {
+    var container = document.getElementById('pdfContainer2');
+    var button = document.getElementById('toggleButton2');
     if (container.style.display === 'block') {
       container.style.display = 'none';
       button.innerText = 'Open PDF';
@@ -66,7 +66,7 @@ Talks
 </script>
 
 <style>
-  #toggleButton {
+  #toggleButton2 {
     background-color: #007bff;
     color: white;
     border: none;
@@ -74,7 +74,7 @@ Talks
     border-radius: 5px;
     cursor: pointer;
   }
-  #toggleButton:hover {
+  #toggleButton2:hover {
     background-color: #0056b3;
   }
 </style>
