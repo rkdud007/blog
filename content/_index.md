@@ -10,6 +10,7 @@ title = "pia park (dot) me"
 - **work**: checkout [github](https://github.com/rkdud007) and [projects](../projects/) page and [more](../misc)
 - **contact**: find me on [X](https://x.com/0xpiapark) or [email](mailto:gayeongparkk@gmail.com)
 - [chip-8 emulator on EVM](../chip-8-emulation-on-evm/)
+- [Hello, World: the first signs of practical iO](https://machina-io.com/posts/hello_world_first.html)
 
 **peronally**
 - I have a [story](../just-a-story-about-joy-of-learning/) about learning
