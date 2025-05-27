@@ -16,3 +16,6 @@ title = "pia park (dot) me"
 - I have a [story](../just-a-story-about-joy-of-learning/) about learning
 - I'm pretty curious about [people](../to-you/) and their unique stories
 - [My PGP key](/pubkey.txt)
+  
+**I found it cool**
+- [cypherpunk manifesto](https://cdn.nakamotoinstitute.org/docs/cypherpunk-manifesto.txt)
