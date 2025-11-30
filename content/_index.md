@@ -8,7 +8,7 @@ title = "pia park (dot) me"
 
 **you might like**
 - **work**: checkout [github](https://github.com/rkdud007) and [projects](../projects/) page and [more](../misc)
-- **contact**: find me on [X](https://x.com/0xpiapark) or [email](mailto:gayeongparkk@gmail.com)
+- **contact**: find me on [X](https://x.com/0xpiapark) or [email](mailto:piapark314@gmail.com)
 - [chip-8 emulator on EVM](../chip-8-emulation-on-evm/)
 - [Hello, World: the first signs of practical iO](https://machina-io.com/posts/hello_world_first.html)
 
@@ -19,3 +19,4 @@ title = "pia park (dot) me"
   
 **I found it cool**
 - [cypherpunk manifesto](https://cdn.nakamotoinstitute.org/docs/cypherpunk-manifesto.txt)
+- [absurdism](https://en.wikipedia.org/wiki/Absurdism)
