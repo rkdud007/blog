@@ -1,11 +1,11 @@
 +++
-title = "crypto and quarter life crisis"
+title = "crypto is in quarter life crisis and so do I"
 date = "2025-12-16T01:17:44-04:00"
 tags = ["life" ]
 draft = false
 +++
 
-Since 2022, crypto has been my obsession and has been a huge part of my identity. I’ve built a career, friendship, community, and lifestyle around. However, from 2025, this old crypto(tldr, niche weirld but interesting hacker, dev, researcher group along with token traders) that I’ve been known for is disappearing, not necessarily a bad thing, let's say, rather a natural maturation. Oh well, I'm also hitting 25 in 3 months, and maybe it's time to think about some life. Yes, so the title is crypto and [quarter life crisis](https://en.wikipedia.org/wiki/Quarter-life_crisis).
+Since 2022, crypto has been my obsession and has been a huge part of my identity. I’ve built a career, friendship, community, and lifestyle around. However, from 2025, this old and immature crypto(tldr, niche weirld but interesting hacker, dev, researcher group along with token traders) is disappearing it's not necessarily a bad thing. It causes confusion, but I'd like to view more on part of being mature. Well, I'm hitting 25 in 3 months, and maybe it's time to think about some life. Yes, so this post is about crypto and myself are both hitting [quarter life crisis](https://en.wikipedia.org/wiki/Quarter-life_crisis)
 
 I’ve already written a metaphorical summary of this in a [previous post](https://www.piapark.me/happy-birthday/), if you haven't.
 
@@ -53,6 +53,9 @@ So products don't have users, there's a lot of funding for startups, which fundi
 CT, aka crypto Twitter, took an influential part here. Actually been decreasing its meaning than before, but as its retrospective post will not talk about now.
 
 As the market can be manipulated by attention, downstream, whether you are a founder, dev, researcher, posting the work to Twitter, and getting attention is considered crucial. A good single viral post can lead to getting a job, knowing the right people, and having strong mutuals in your Twitter profile leads to how you’ll likely succeed, aka “high signal”. 
+
+![1](/images/twitter.png)
+(my three years in CT summery)
 
 ### community, but also friends
 
