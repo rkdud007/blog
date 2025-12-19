@@ -1,9 +1,15 @@
 +++
 title = "crypto is in quarter life crisis and so do I"
+description = ""
 date = "2025-12-16T01:17:44-04:00"
 tags = ["life" ]
 draft = false
 +++
+
+
+<img width="400" alt="Screenshot 2024-03-05 at 6 58 28 PM" src="/images/quarter-frieren.png">
+
+
 
 Since 2022, crypto has been my obsession and has been a huge part of my identity. I’ve built a career, friendship, community, and lifestyle around. However, from 2025, this old and immature crypto(tldr, niche weirld but interesting hacker, dev, researcher group along with token traders) is disappearing it's not necessarily a bad thing. It causes confusion, but I'd like to view more on part of being mature. Well, I'm hitting 25 in 3 months, and maybe it's time to think about some life. Yes, so this post is about crypto and myself are both hitting [quarter life crisis](https://en.wikipedia.org/wiki/Quarter-life_crisis)
 
