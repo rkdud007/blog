@@ -9,7 +9,7 @@ draft = false
 
 <img width="400" alt="Screenshot 2024-03-05 at 6 58 28 PM" src="/images/quarter-frieren.png">
 
-Since 2022, crypto has been my obsession and has been a huge part of my identity. I’ve built a career, met so many cool friends, had fun in community. From 2025, this commuity entered the new phase, could viewed as being mature. So this post is about crypto hitting [quarter life crisis](https://en.wikipedia.org/wiki/Quarter-life_crisis).
+Since 2022, crypto has been my obsession and has been a huge part of my identity. I’ve built a career, met so many cool friends, had fun in community. From 2025, this commuity entered the new phase, could viewed as being mature. So this post is about crypto hitting [quarter life crisis](https://en.wikipedia.org/wiki/Quarter-life_crisis). (I've also hit my personal quarter life crisis, maybe let's talk in another post)
 
 I’ve already written a metaphorical summary of this in a [previous post](https://www.piapark.me/happy-birthday/), if you haven't.
 
