@@ -65,7 +65,7 @@ As the market can be manipulated by attention, downstream, whether you are a fou
 
 Attention is one of the traits of the crypto community. As it is composed of unique types of people as mentioned above, it's multi-cultural, a heavily travel lifestyle, and also pretty young(this part I might be biased towards my friends group who are mostly in their 20s) and be friends not just college. Especially that was much true as the industry was pretty young, it attracted more risk-prone people.
 
-<img width="400" alt="Screenshot 2024-03-05 at 6 58 28 PM" src="/images/passport.PNG">
+<img width="400" alt="Screenshot 2024-03-05 at 6 58 28 PM" src="/images/passport.png">
 
 (my three years traveling mostly for attending crypto event/hangout crypto friends)
 
