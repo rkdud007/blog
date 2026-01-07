@@ -65,6 +65,10 @@ As the market can be manipulated by attention, downstream, whether you are a fou
 
 Attention is one of the traits of the crypto community. As it is composed of unique types of people as mentioned above, it's multi-cultural, a heavily travel lifestyle, and also pretty young(this part I might be biased towards my friends group who are mostly in their 20s) and be friends not just college. Especially that was much true as the industry was pretty young, it attracted more risk-prone people.
 
+<img width="400" alt="Screenshot 2024-03-05 at 6 58 28 PM" src="/images/passport.PNG">
+
+(my three years traveling mostly for attending crypto event/hangout crypto friends)
+
 This friendly, open vibe extends to a further interesting point, it's definitely relatively easy to reach the top or be friends with people been in the scene for a long time. Industry is moving fast and unsettled, and still, small as a whole community kinda fits into Twitter. e.g, if someone is new to AI, it’d be hard to be friends with the founder of Antropic / OpenAI, etc, whereas in crypto can relatively easily encounter/communicate with people who are considered “top” in the industry. 
 
 Not only for people based on this open source culture, but it's also easy to get learning materials as beginners, such as educational contents, open source projects, and a lot of initial support programs which not necessarily require 5+ years of phd.
