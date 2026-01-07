@@ -1,5 +1,5 @@
 +++
-title = "crypto is in quarter life crisis and so do I"
+title = "crypto I used to know"
 description = ""
 date = "2025-12-16T01:17:44-04:00"
 tags = ["life" ]
@@ -9,17 +9,15 @@ draft = false
 
 <img width="400" alt="Screenshot 2024-03-05 at 6 58 28 PM" src="/images/quarter-frieren.png">
 
-
-
-Since 2022, crypto has been my obsession and has been a huge part of my identity. I’ve built a career, friendship, community, and lifestyle around. However, from 2025, this old and immature crypto(tldr, niche weirld but interesting hacker, dev, researcher group along with token traders) is disappearing it's not necessarily a bad thing. It causes confusion, but I'd like to view more on part of being mature. Well, I'm hitting 25 in 3 months, and maybe it's time to think about some life. Yes, so this post is about crypto and myself are both hitting [quarter life crisis](https://en.wikipedia.org/wiki/Quarter-life_crisis)
+Since 2022, crypto has been my obsession and has been a huge part of my identity. I’ve built a career, met so many cool friends, had fun in community. From 2025, this commuity entered the new phase, could viewed as being mature. So this post is about crypto hitting [quarter life crisis](https://en.wikipedia.org/wiki/Quarter-life_crisis).
 
 I’ve already written a metaphorical summary of this in a [previous post](https://www.piapark.me/happy-birthday/), if you haven't.
 
-## old crypto
+## crypto I used to know
 
 ### why unique
 
-Initially, I got attracted by crypto as it is a unique intersection of technology and finance. On one side are blockchain systems, rooted in distributed systems and cryptography. On the other is a loosely defined financial industry, which focuses on the business spectrum from token gambling to fintech 2.0. This naturally invokes a lot of paradoxical challenges as well: How to make a *decentralized* system perform *fast and efficiently*? Does *privacy* is what people *really* cares? Does the token really *good*?
+Crypto is a unique intersection of technology and finance. On one side are blockchain systems, rooted in distributed systems and cryptography. On the other is a loosely defined financial industry, which focuses on the business spectrum from token gambling to fintech 2.0. This naturally invokes a lot of paradoxical challenges as well: How to make a *decentralized* system perform *fast and efficiently*? Does *privacy* is what people *really* cares? Does the token really *good*?
 
 ### type of people
 
@@ -79,13 +77,3 @@ A big shift is around the merging between crypto and with traditional world, whi
 Regarding type 4), probably no more easy grant money for just doing a “cool project” without being useful in a business context. No extreme overflooding downstream of money for experimental ideas or projects, and attention does not matter much anymore(maybe still a token sale, it matters, but I’m talking more about the general context).
 
 Crypto has been such a unique environment for nerds who just want to build "cool stuff and somehow try to make it useful" can earn money and reputation. Unfortunately don’t think this was sustainable.
-
-Some personal learning:
-
-* working irl with a small, highly talented, curious, optimistic people is fun
-* A highly talented team might be easier to find in a global setting, which means borderless transaction really matters
-* money, research, engineering,... these are all just methods X for a bigger goal(or value) Y. Just [optimizing for X](https://xyproblem.info/) might not good idea.
-* But yes, money is really important in this capitalism society. The only ones who can even realize money is not important is the ones who already have previliage of money.
-* generally computer science topics(distributed system), Cryptography, Rust is pretty fun
-
-Mainly, I just want to take some time to genuinely think about what excites me, what really matters to me, and the world. I’m pretty optimistic that following curiosity and solving random, fun questions could lead the way. Well, I’m turning 25 after 3 months, so I can also mark this as a quarter life crisis. I’m also happy to chat with people who went through a similar path(regardless of crypto, but more on quarter life crisis in general), so say hi [here](mailto:piapark314@gmail.com)!
