@@ -15,7 +15,7 @@ I’ve already written a metaphorical summary of this in a [previous post](https
 
 ## crypto I used to know
 
-### why unique
+### unique
 
 Crypto is a unique intersection of technology and finance. On one side are blockchain systems, rooted in distributed systems and cryptography. On the other is a loosely defined financial industry, which focuses on the business spectrum from token gambling to fintech 2.0. This naturally invokes a lot of paradoxical challenges as well: How to make a *decentralized* system perform *fast and efficiently*? Does *privacy* is what people *really* cares? Does the token really *good*?
 
@@ -25,7 +25,7 @@ Crypto *did* attract a lot of unique, interesting people. While human categoriza
 
 - type 1) Ideological anarchists who are driven by early crypto ideals: protecting minorities, preserving privacy, and resisting centralized power. They are often referred to as Bitcoin OGs and were drawn in by crypto’s political and philosophical foundations.
 
-- type 2) Unregulated finance "degens" who engage in trading, building, or using high risk financial products. They embrace speculation and often view crypto as gambling 2.0, a permissionless arena for financial experimentation.
+- type 2) Unregulated finance "degens" who engage in trading, building, or using high risk + creative financial products. They embrace speculation and often view crypto as gambling 2.0, a permissionless arena for financial experimentation.
 
 - type 3) As capital flooded the ecosystem, crypto began to attract builders(founder type) who saw it as an underrated, high-potential frontier(at least at the time). This group focuses on creating products, protocols, and infrastructure.
 
@@ -63,17 +63,17 @@ As the market can be manipulated by attention, downstream, whether you are a fou
 
 ### community, but also friends
 
-Attention is one of the traits of the crypto community. As it is composed of unique types of people as mentioned above, it's multi-cultural, a heavily travel lifestyle, and also pretty young(this part I might be biased towards my friends group who are mostly in their 20s) and be friends not just college. 
+Attention is one of the traits of the crypto community. As it is composed of unique types of people as mentioned above, it's multi-cultural, a heavily travel lifestyle, and also pretty young(this part I might be biased towards my friends group who are mostly in their 20s) and be friends not just college. Especially that was much true as the industry was pretty young, it attracted more risk-prone people.
 
 This friendly, open vibe extends to a further interesting point, it's definitely relatively easy to reach the top or be friends with people been in the scene for a long time. Industry is moving fast and unsettled, and still, small as a whole community kinda fits into Twitter. e.g, if someone is new to AI, it’d be hard to be friends with the founder of Antropic / OpenAI, etc, whereas in crypto can relatively easily encounter/communicate with people who are considered “top” in the industry. 
 
 Not only for people based on this open source culture, but it's also easy to get learning materials as beginners, such as educational contents, open source projects, and a lot of initial support programs which not necessarily require 5+ years of phd.
 
 ## vibe is shifting
-Yes, things are changing. Overall, I view it as the industry is just growing up, different phase.
+Yes, things are changing. Overall, I view it as the industry is just growing up, different phase. Rather have more opportunity but just different vibe. 
 
 A big shift is around the merging between crypto and with traditional world, which was pretty separate before. Type 3) could integrate crypto infra within traditional distributed channels and build as fintech 2.0. Or else, if you want a product, you have to find another problem to solve, not a crypto-native. Type 2) could continue as yet unregulated gambling. Only the remaining Type 1) might leave a small number of big players, such as some privacy chains.
 
 Regarding type 4), probably no more easy grant money for just doing a “cool project” without being useful in a business context. No extreme overflooding downstream of money for experimental ideas or projects, and attention does not matter much anymore(maybe still a token sale, it matters, but I’m talking more about the general context).
 
-Crypto has been such a unique environment for nerds who just want to build "cool stuff and somehow try to make it useful" can earn money and reputation. Unfortunately don’t think this was sustainable.
+Crypto has been such a unique environment for nerds who just want to build "cool stuff and somehow try to make it useful" can earn money and reputation. But maybe now the rule of the game is changed, which again not a bad thing.
