@@ -54,6 +54,12 @@ title = 'pia park (dot) me'
 
 math = true
 
+[menu]
+  [[menu.main]]
+    name = "Subscribe"
+    url = "/subscribe/"
+    weight = 10
+
 [markup.goldmark.renderer]
 unsafe = true # Allow HTML in md files
 

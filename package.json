@@ -1,0 +1,15 @@
+{
+  "name": "blog-subscription",
+  "version": "1.0.0",
+  "description": "Email subscription system for piapark.me blog",
+  "scripts": {
+    "send-newsletter": "node scripts/send-newsletter.js"
+  },
+  "dependencies": {
+    "googleapis": "^128.0.0",
+    "resend": "^3.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  {{ .Content }}
+
+  <form id="subscribe-form" style="margin: 2rem 0;">
+    <input type="email" id="email" name="email" placeholder="your@email.com" required
+      style="padding: 0.5rem; width: 100%; max-width: 300px; margin-bottom: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" />
+    <button type="submit"
+      style="padding: 0.5rem 1rem; background: #000; color: #fff; border: none; border-radius: 4px; cursor: pointer;">
+      Subscribe
+    </button>
+  </form>
+
+  <div id="message" style="margin-top: 1rem;"></div>
+</article>
+
+<script src="/js/subscribe.js"></script>
+{{ end }}
