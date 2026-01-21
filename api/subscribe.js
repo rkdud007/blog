@@ -101,6 +101,16 @@ module.exports = async (req, res) => {
 
   } catch (error) {
     console.error('Subscription error:', error);
-    return res.status(500).json({ error: 'Failed to subscribe. Please try again later.' });
+    console.error('Error stack:', error.stack);
+    console.error('Error details:', {
+      message: error.message,
+      code: error.code,
+      name: error.name
+    });
+    return res.status(500).json({
+      error: 'Failed to subscribe. Please try again later.',
+      // Only include debug info in development
+      ...(process.env.NODE_ENV === 'development' && { debug: error.message })
+    });
   }
 };
