@@ -28,6 +28,24 @@ module.exports = async (req, res) => {
       googleapisError = e.message;
     }
 
+    // Test 3: Can we require resend?
+    let resendLoaded = false;
+    let resendError = null;
+    try {
+      const { Resend } = require('resend');
+      resendLoaded = true;
+    } catch (e) {
+      resendError = e.message;
+    }
+
+    // Test 4: Check email env vars.
+    const emailEnvCheck = {
+      hasResendKey: !!process.env.RESEND_API_KEY,
+      hasFromEmail: !!process.env.FROM_EMAIL,
+      hasSenderName: !!process.env.SENDER_NAME,
+      hasBlogUrl: !!process.env.BLOG_URL
+    };
+
     return res.status(200).json({
       message: 'Test endpoint working',
       env: envCheck,
@@ -35,6 +53,11 @@ module.exports = async (req, res) => {
         loaded: googleapisLoaded,
         error: googleapisError
       },
+      resend: {
+        loaded: resendLoaded,
+        error: resendError
+      },
+      emailEnv: emailEnvCheck,
       nodeVersion: process.version,
       timestamp: new Date().toISOString()
     });
