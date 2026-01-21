@@ -6,10 +6,15 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Initialize Google Sheets API.
 function getGoogleSheetsClient() {
+  // Remove surrounding quotes if present and handle newlines.
+  let privateKey = process.env.GOOGLE_PRIVATE_KEY || '';
+  privateKey = privateKey.replace(/^["']|["']$/g, ''); // Remove leading/trailing quotes.
+  privateKey = privateKey.replace(/\\n/g, '\n'); // Convert \n to actual newlines.
+
   const auth = new google.auth.JWT(
     process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
     null,
-    process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+    privateKey,
     ['https://www.googleapis.com/auth/spreadsheets']
   );
 
