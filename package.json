@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Email subscription system for piapark.me blog",
   "scripts": {
-    "send-newsletter": "node scripts/send-newsletter.js"
+    "send-newsletter": "node scripts/send-newsletter.js",
+    "send-email": "node scripts/send-email.js"
   },
   "dependencies": {
     "googleapis": "^128.0.0",
