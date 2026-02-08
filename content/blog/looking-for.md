@@ -1,4 +1,5 @@
 +++
+draft = true
 title = "GRADUATED"
 date = "2026-02-03T00:00:44-04:00"
 tags = ["life"]
