@@ -10,7 +10,7 @@ Growing up in Korea and then working in tech, for me what “interesting” mean
 
 Traveling made me realize I might’ve been biased.
 
-Now I think what really makes people interesting is whether they’re genuinely happy with their life.
+Now I think what really makes people interesting is whether they’re genuinely happy with their life, and more about what makes them happy.
 
 - I met a guy from Chile who’s been a rafting guide for 10 years. I met him in Queenstown, New Zealand, he goes back and forth between NZ and Chile, guiding seasons and teaching at a university on the side.
 - I met another guy in Yukon, Canada who loves his dogs so much he’s run a husky sledding business for 20 years. He lives with his two daughters and his dogs, and he’s deeply proud of the life he chose.
