@@ -8,6 +8,9 @@ tags = ["life"]
 
 Early this year, I had an idea: “I want to put myself in nature, fully disconnected from people and work, and find what I really want to do with my life.” From late January to mid February, I spent 3 weeks in New Zealand. The cottage house was located between tiny towns called “Clyde” and “Alexandra”; both populations were around 1~2k. Other than that, it was just the house with the garden and the roads surrounded by beautiful mountains and a lake.
 
+![nz](/images/nz.png)
+
+
 ### phase 1. Escape 
 
 The initial few days were magical. The scenery was perfectly what I had dreamed of. I intentionally disconnected myself from the internet and instead read a bunch of books (I brought 4 books: *Meditations*, *Man's Search for Meaning*, *The Art of Loving*, *The Coming Wave*) and wrote random stuff from my mind. I was focused on the present meaning just looking at the trees and lakes, looking up at the sky, etc. As the house was very nature friendly, there was a little bit of an insect problem, but I was getting used to it the longer I stayed. In fact, I learned it’s the default cost of staying in a place with a beautiful garden. 
