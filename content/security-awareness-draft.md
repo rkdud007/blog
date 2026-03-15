@@ -1,5 +1,12 @@
-+++
-title = 'Security Awareness Draft'
-+++
+---
+title: "Security Awareness Draft"
+type: "page"
+---
 
-<embed src="/pdf/security-awareness-draft.pdf" type="application/pdf" width="100%" height="800px" />
+<script>
+window.location.href = "/pdf/security-awareness-draft.pdf";
+</script>
+
+<meta http-equiv="refresh" content="0; url=/pdf/security-awareness-draft.pdf">
+
+If you are not redirected automatically, [click here to view the document](/pdf/security-awareness-draft.pdf).
