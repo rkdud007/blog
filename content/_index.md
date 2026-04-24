@@ -13,6 +13,7 @@ title = "pia park (dot) me"
 - [Hello, World: the first signs of practical iO](https://machina-io.com/posts/hello_world_first.html)
 
 **peronally**
+- well. I am [human](../human.md)
 - I have a [story](../just-a-story-about-joy-of-learning/) about learning
 - I'm pretty curious about [people](../to-you/) and their unique stories
 - [My PGP key](/pubkey.txt)
