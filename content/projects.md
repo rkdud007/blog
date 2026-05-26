@@ -5,11 +5,11 @@ menu = "main"
 
 Here are some of my projects. Sometimes I’m a bit lazy about updating this list. For more, [check out my GitHub](https://github.com/rkdud007) for the latest!  
 
-Some keywords: `cryptography`, `distributed systems`, `blockchain`, `Rust`. I love the challenge of contributing to meaningful projects that seem impossible — things no one has done before.
+Some keywords: `cryptography`, `security`, `distributed systems`, `blockchain`, `Rust`. 
 
 - **security-awareness**: [arxiv](https://arxiv.org/pdf/2603.19011) | Security awareness in LLM agents: the NDAI zone case. 
-- **kolu**: [Github](https://github.com/kolu-gears/ff1) | an identification friend or foe (IFF) protocol
-- **diamond-io**: [Github](https://github.com/MachinaIO/diamond-io) | [Diamond iO](https://eprint.iacr.org/2025/236) implementation 
+- **kolu**: [Github](https://github.com/kolu-gears/ff1) | an identification friend or foe (IFF) protocol for drone.
+- **diamond-io**: [Github](https://github.com/MachinaIO/diamond-io) | [Diamond iO](https://eprint.iacr.org/2025/236)(A Straightforward Construction of Indistinguishability Obfuscation from Lattices) implementation 
 - **ress**: [Github](https://github.com/paradigmxyz/ress) | The implementation of Stateless Ethereum client based on Reth
 - **awesome-zkvm**: [Github](https://github.com/rkdud007/awesome-zkvm) | A curated list of zkVM, zero-knowledge virtual machine
 - **solchip8**: [Github](https://github.com/rkdud007/solchip8) | SolChip8 is the first 100% on-chain Chip8 emulator smart contract.
